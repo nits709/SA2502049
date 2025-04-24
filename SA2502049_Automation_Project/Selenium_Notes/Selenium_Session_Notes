@@ -1,0 +1,400 @@
+Selenium WebDriver Module no. 3
+
+1. Content
+		Concept of Automation
+		Component of Selenium Webdriver
+		Configuration of Selenium WebDriver.
+		Methods of WebDriver
+		  1. get() 
+		  2. getCurrentURL()
+		  3. SendKeysMethod
+		  4. Click();
+        Locators in WebDriver - 
+        		- Name
+        		- ID
+        		- ClassName
+        		- Xpath
+        		- Css Selectors
+        		- tagName
+        		- Linktext
+        		- partial Link
+        		- Relative Locator.
+        Handling the Control
+         - Button
+         - text/Box
+         - HyperLink
+         - Radio Button
+         - Checkbox
+         - DropDown List
+         - File Upload
+         - Tables - excel file row|column | webtables -row and column
+
+         Synchronization in WebDriver
+ 		 - Thread.sleep()
+ 		 - Implicit Wait
+ 		 - Explicit wait
+ 		 - FluentWait
+ 		 - PageLoadTimeout
+
+ 		 Handling Alerts
+ 		 Handling MultipleWindows
+ 		 Handling Popups
+ 		 Mouse Actions
+ 		 	- Click
+ 		 	- Right Click
+ 		 	- Drag n drop
+ 		 	- Mouse Hover
+ 		 JavaScript Executor
+ 		    - Click
+ 		    - scroll
+ 		 Screenshot
+ 		 testNG (unit testing framework)
+ 		 	Configuration
+ 		 	Execute single testcase
+ 		 	Multiple tescase
+ 		 	Setting priority
+ 		 	generate the report
+ 		 	Beforetest,AfterTest, BeforeMethod, AfterMethod
+ 		 	DataProvider
+ 		 	KeyWordDriver Framework
+ 		 	Page Object Model Framework
+ 		 	DataDriver Framework 
+ 		 	Cucumber Approach.
+ 		 Introduction to Maven
+ 		 	- How to Create project
+ 		 	- Adding dependencies - libraries.
+ 		 	- Execution
+ 		 	- extent report
+
+
+
+ 		Java revision Points.
+ 			- Java Basics
+ 			   - Vairables
+ 			   - Loops/ Condition if else
+ 			    - loops
+                   - for loop
+                   - enhanced loop (for each loop)
+                   - nested loop.
+                Arrays
+                Methods/Functions
+                Type Casting.
+                Creating class and objects
+                	Constructor
+                	Static variables and methods
+                	calling method with objects
+                Ops -concepts
+                Exception Handling
+                 - throws keyword.	
+                Collections
+                  List (*)
+                  Set
+                  Map 
+
+
+      What is Software testing?
+      Software testing is a process of identifying correctness, completeness, security and quality of developed software (CCSQ)
+
+      Software testing is a process to verifiying and validate the application in order to identify defects. 
+      difference b/w expected and actual result.
+
+
+      1. Scenario Creation.
+      2. Test planning - senior people.
+      3. testcase creation
+      4. TestData Creation
+      5. RTM - 
+      6. Execution.
+
+      	to Create a GMail account manually
+      	1. Open the browser
+      	2. enter the Application URL
+      	3. Entering the data - 
+      	4. Selecting the data from dropdown
+      	5. Click/enter - Links/button
+      	6. Selecting/Clicking the checkbox/radio button
+      	7. Observe the result
+      	8. compare expect with actual result
+      	9. mark the tc's fail/pass.
+
+
+      	Automation Testing- 
+      	Automation testing is the process via which we can perfrom all above actions via a machine/an automation tools.
+
+      	Every Automation tools is software.
+
+      	Instructions neeed to be provided into a specific programming langugage
+      	(Java, python, ruby, perl, PHP etc.)
+
+      	Advantages of Automation testing.
+      	1. Faster
+      	2. time Saving
+      	3. Cost | home work for guys.
+      	4. Less Human efforts.
+      	5. Accuracy
+      	6. Reusability
+      	7. Automation report.
+      	8. More Efficiency.
+      	9. Improve a Quality.
+      	10. More test coverage. - cross browser testing| devices.
+      	11. Early bug finding
+      	12. Boost the product| productivity.
+
+
+      	When to Automate
+      	1. Stable requirement/functionality.
+      	2. regression/Smoke/sanity Testing.
+      	3. Repeated Scenario's  - to check the all/each links working on page | login scenario/   
+      	   checkout | social login | 
+        4. security testing
+        5. accessiblity testing
+        6. compatbility testing.
+        7. performance testing.
+
+
+        Process of Automation?
+        1. Planning
+        2. Tool Selection.
+        3. testscripts 
+        4. test data creation.
+        5. report generation.
+
+
+
+
+ Selenium -   is an open source project 
+              is has very strong coomunity.
+              is set or bundle of test automation tools.
+
+   Components of Selenium.
+  1. Selenium IDE - (Record and playback mechanism).
+  2. Selenium Grid - (parallel execution | cross browser testing)
+  3. Selenium RC - Remote control. (Deprecated)
+  4. Selenium WebDriver. 4.28.0
+
+  Selenium WebDriver
+  1. Automation testing tool for testing WebBased(browser/websites) Application
+  2. WebDriver is an Interface.
+  3. is an API.
+  4. Selenium Webdriver method - API's which is build using Rest technology.
+
+
+  1. How Selenium Webdriver works
+    test scripts execution - we  write a test scripts using a selenium client libraries (Java,Python, etc) in you choosen programming langugage.
+
+  2. Command translation : The Client library translates your test commands into a JSON format as 
+                          webdriver protocol (W3c/Json Wired)
+
+  3.HTTPS Communication: These JSON Commands are sent over HTTP to the appropriate browser driver (   
+                          cD,FD, ED)
+
+  4.Driver- Browser Interaction : The browser driver recevies the commands and interacts with the
+                     browser to perform the specified actions(eg. click on button, launch url).
+
+  5. Response Handling: The browsers response is sent back through the driver to the client library,
+                   which then proceeds with the next steps in the test scripts.
+
+
+
+      Pre-Requisite for Selenium WebDriver
+
+      1. Minimum Window 10 - Operating system.
+      2. Any latest browser with updated version.
+      3. minimum java version 11 (for checking java version in cmd - java -version | java --version)
+      4. windows laptop = window key + R  - cmd then hit enter -- this will commant prompt.
+      5. Any java Editor - Eclipse or intellij
+      6. A selenium Jar.
+
+
+      Configuration of Selenium Webdriver.
+        1. Create 2 seperate Folders
+            a. YourName_SeleniumWorkspace
+            b. Selenium Jars Files.
+        2. Open selenium.dev websites
+        3. Click on Download Links
+        4. Cut paste the dowloaded file in the 2nd folder (Selenium jar files)
+        5. Launch Eclipse.
+        6. Select the 1st Folder (Which we have created in 1st Step) as your workspace.
+        7. Click on Launch.
+        8. Now create a new project
+            a. File -> New java Project
+            b. Give a name to Project
+            c. Uncheck Create Module-info.java checkbox
+            d. click on finish
+
+
+
+
+        Methods of WebDrivers
+        1. Launch the browser : Create an object of webdriver interface, browser sepcific class   
+                                object
+        2. Get(): use to open any websites over browser.
+        3. close(): close the browser window
+        4. driver().manager().window().maixmize() : maximized the browser window.
+        5. getTitle(): which returns the title of webPage (String)
+        6. getCurrentUrl(): Returns the URL of current page. (String)
+        7. findElement(): Reads the control on the web page. Locates for the first occurrence on  
+                          the web page. (WebElement)
+
+
+        Common Exception in Selenium Automation.
+        1. InvalidArgumentException :   Your URL is in wrong syntax (The URL should be absolutemeans it should starts with http:///https://)
+        2. NoSuchElementException: Selenium is unable to locate the element over page.
+            what are the possible reasons
+            1. The value of locator that might be wrong.
+            2. Value of locator may be dynamic in nature.
+            3. Synchronization issue.
+
+
+        WebElement
+          • Every control on the web page is treated as WebElement in Selenium.
+          • WebElement is an interface.
+          • WebElement can hold any control on the web page.
+
+
+
+        Locators* - 
+          
+          Locators is medium through which selenium can reach to the element over page.
+
+          1. Name
+          2. Id
+          3. className
+          4. CssSelector
+          5. Xpath
+          6. PartialLink
+          7. Linktext
+          8. Relative
+          9. TagName
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

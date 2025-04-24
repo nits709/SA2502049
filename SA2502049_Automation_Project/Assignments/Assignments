@@ -1,0 +1,15 @@
+Assignments
+
+
+ 1.Open https://www.echotrak.com/Login.aspx?ReturnUrl=%2f 
+     a. Enter username as yourname (using locator name)
+     b. Enter password as yourname_123 (using locator name)
+     c. click on login button (using locator name) 
+ 2.Open https://www.echotrak.com/Login.aspx?ReturnUrl=%2f 
+     a. Enter username as yourname (using locator id)
+     b. Enter password as yourname_123 (using locator id)
+     c. click on login button (using locator id)  
+ 3. Open facebook.com/
+ 	a. Enter valid username (Use className)
+ 	b. Enter valid password (Use className)
+ 	c. click login button (Use className)        
