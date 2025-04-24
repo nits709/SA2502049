@@ -1,0 +1,7 @@
+
+# WebDriver
+/.settings
+.classpath
+.project
+/bin
+/.metadata
