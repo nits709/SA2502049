@@ -244,6 +244,7 @@ Selenium WebDriver Module no. 3
             1. The value of locator that might be wrong.
             2. Value of locator may be dynamic in nature.
             3. Synchronization issue.
+        3. InvalidSelectorException: The value of locator is in wrong format.    
 
 
         WebElement
@@ -267,7 +268,35 @@ Selenium WebDriver Module no. 3
           8. Relative
           9. TagName
 
-
+		Css Selector -> This is an locators which use to identify element over web page by 1 or mulitple format.
+		Types. Single Attributes 
+				1. tagname[attribute="value"] --> input[type="text"]
+				
+				Mulitple Attributes
+				1. tagname[attribute="value"][attribute="value"] --> 
+						input[type="text"][class="form-control"]
+						input[type="text"][placeholder="Username"]
+						
+				2. 	^  --> starts with (initial part of locator is stable and rest is dynamic)
+				    $  --> Ends with (ending part of locator is stable and inital- starting is dynamic)
+				    * --> Contains  [class*='inputtext']
+				    . --> class  --> .inputtext._55r1._6luy 
+				    # --> id -- #email
+					
+				
+				xxxxxxx231231312
+				123213123123xxxxxxx
+				2312312312xxxxxx2132131
+				
+				
+				.inputtext._55r1._6luy._9npi
+				input[class='inputtext']
+				
+				
+				class="inputtext _55r1 _6luy
+						
+						
+		
 
 
 

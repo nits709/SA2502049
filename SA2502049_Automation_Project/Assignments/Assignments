@@ -12,4 +12,7 @@ Assignments
  3. Open facebook.com/
  	a. Enter valid username (Use className)
  	b. Enter valid password (Use className)
- 	c. click login button (Use className)        
+ 	c. click login button (Use className) 
+ 4. a. Find any login and automate with using Id and class locators in css
+    b. Find any login and automate with using # and . in locators in css
+ 	       
