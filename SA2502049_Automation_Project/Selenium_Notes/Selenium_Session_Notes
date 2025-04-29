@@ -235,6 +235,7 @@ Selenium WebDriver Module no. 3
         6. getCurrentUrl(): Returns the URL of current page. (String)
         7. findElement(): Reads the control on the web page. Locates for the first occurrence on  
                           the web page. (WebElement)
+        8. findElements(): Reads multiple elements on the webpage(List<WebElement>)                  
 
 
         Common Exception in Selenium Automation.
@@ -294,8 +295,29 @@ Selenium WebDriver Module no. 3
 				
 				
 				class="inputtext _55r1 _6luy
-						
-						
+				
+				
+		World -> Contentient > Country > State > city > local area > address
+		World -> Asia > India > Maharashtra > Pune > Kharadi > Near IT park > building > floor > flatno.
+		
+		World > Asia > India > Maharashtra > Pune > Kharadi > 
+		World > Asia > India > Maharashtra > Mumbai > west >
+		
+			
+			Xpath - XML path  - every element over webpage having an address.
+			1. Complete Xpath
+			2. relative Xpath  - //tagname[@attribute="value"] - //input[@id='username']
+								//*[@attribute="value"]
+								//tagname[@attribute="value"]/tag/tag
+			
+			this is an complete xpath which starts from the root tag or level in html page
+			
+			Username - html/body/...//div/main/div[2]/div/form/div/input
+			password - html/body/div/main/div[2]/div/..//form/div[2]/input	
+			
+			
+			/html/body/div/main/div[2]/div[1]/form/div[1]/input
+			//*[@id="username"]		
 		
 
 

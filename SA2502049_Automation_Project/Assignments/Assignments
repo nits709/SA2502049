@@ -15,4 +15,24 @@ Assignments
  	c. click login button (Use className) 
  4. a. Find any login and automate with using Id and class locators in css
     b. Find any login and automate with using # and . in locators in css
+ 5.	Open https://www.facebook.com/
+	Enter valid user name as test@gmail.com  (Use xpath)
+	Enter invalid password (Use xpath)
+	Click on Login button (Use xpath)
+	Display the error message 
+6.	Open https://www.echotrak.com/Login.aspx?ReturnUrl=%2f 
+	a.	Enter username as your name (using locator xpath)
+	b.	Enter password as yourname_123 (using locator xpath)
+	c.	Click on login button. (using locator xpath)
+	d.	Display the error message 
+7.	Open https://www.google.com
+	a.	Enter sachin tendulkar in search box using Xpath
+	b.	Hit Enter
+	c.	Verify the title (Title should contain sachin
+8. 	Open https://www.facebook.com/
+	a.	Enter valid user name as test@gmail.com  (Use Relative Locator)
+	b.	Enter invalid password (Use Relative Locator)
+	c.	Click on Login button (Use Relative Locator)
+
+    
  	       
