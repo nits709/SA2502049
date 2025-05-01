@@ -33,6 +33,43 @@ Assignments
 	a.	Enter valid user name as test@gmail.com  (Use Relative Locator)
 	b.	Enter invalid password (Use Relative Locator)
 	c.	Click on Login button (Use Relative Locator)
+9. Open https://www.chabadpotomac.com/templates/articlecco_cdo/aid/6617538/jewish/Hebrew-School-New-Student.htm
+   a. automation radio button  	- Hebrew Reading Proficiency
+10. Open https://omayo.blogspot.com/
+     a.	Display the status of Pen, Book and Laptop, Bag checkboxes (Enabled, visible, selected)
+	 b.	Select the check box that is not selected
+     c.	Display the status of Pen, Book and Laptop, Bag checkboxes 
+11.	Open https://echoecho.com/htmlforms10.htm
+	a.	Display the status of every radio button (Enabled, visible, selected)
+	b.	Click on every radio button
+	c.	Display the status
+12.	Open https://register.rediff.com/register/register.php?FormName=user_details 
+	a.	Select your birth date
+	b.	Display the birth date as 
+	e.g. My Birth Date is 01 JAN 2000
+13.	Open https://www.redbus.in/ 
+	a.	 In From Enter first 4 characters of your city (Kolhapur -> Kolh)
+	b.	Select 1st Option from the list displayed
+	c.	In To Enter first 4 characters of your city (Banglore -> Ban)
+	d.	Select 1st Option from the list displayed
+	e.	Click on Calendar icon
+	f.	Click on Date 31
+	g.	Click on Search Buses button
+	h.	Display the name of 1st Bus from the list 
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+   
 
     
  	       

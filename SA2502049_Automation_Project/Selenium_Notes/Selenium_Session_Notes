@@ -253,7 +253,14 @@ Selenium WebDriver Module no. 3
           • WebElement is an interface.
           • WebElement can hold any control on the web page.
 
-
+		Method of WebElement Interface.
+		1.	sendKeys(): Used to enter some text in the text box.
+		2.	click(): Used to click on the control.
+		3.	getText(): Returns the text on the control. (String)
+		4.	isSelected() : Used to check whether the checkbox or radio button is selected or not. (boolean)
+		5.	isEnabled() : Used to check whether the control is enabled or disabled. (boolean).
+		6.	isDisplayed() : Used to check whether the control is visible or not. (boolean)
+		
 
         Locators* - 
           
@@ -319,9 +326,16 @@ Selenium WebDriver Module no. 3
 			/html/body/div/main/div[2]/div[1]/form/div[1]/input
 			//*[@id="username"]		
 		
-
-
-
+		Handling Dropdown
+	1.	If the element is having select tagname then only selenium would treated as dropdown
+	2. For handling this type dropdown list selenium having speical class called select class.
+	
+	
+	Methods
+	1. getFirstSelectedOption(): Returns the selected option from the dropdown list (WebElement)
+	2. selectByIndex();
+	3. selectByVisibleText()
+	4. selectByValue();
 
 
 
