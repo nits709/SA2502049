@@ -339,7 +339,25 @@ Selenium WebDriver Module no. 3
 
 
 
+		
+		Synchronization (Waits in Selenium)
 
+Synchronization is the process of adjusting the speed of tool with speed of the application.
+
+
+	1. Thread.sleep()
+		a. pauses the execution for given time period.
+		b. it is application for single statement only.
+		c. Mandatory part in this , it takes mandatory delay
+	2.Implicit wait	
+		a. it doesn't takes mandatory delay
+		b. it works throughout the scripts(driver.findElement() and driver.findElements())
+	3. Explicit Wait(WebDriver Wait)
+		a. it doesn't takes mandatory delay
+		b. its is application for single statement only
+		c. can use for condition wait (isalertpresent, isselected, isDisplayed etc.)
+	4. fluentWait.	
+		
 
 
 
