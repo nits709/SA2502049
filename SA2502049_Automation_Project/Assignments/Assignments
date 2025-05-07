@@ -57,6 +57,8 @@ Assignments
 	g.	Click on Search Buses button
 	h.	Display the name of 1st Bus from the list 
 14. https://www.redbus.in/ with explicit and fluent wait.
+15. navigate to https://www.cricbuzz.com/live-cricket-scorecard/115345/kkr-vs-csk-57th-match-indian-premier-league-2025
+	and print complete web table data(scoreboard) in to console.
 
      
      

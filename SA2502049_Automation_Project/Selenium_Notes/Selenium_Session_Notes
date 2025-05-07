@@ -245,7 +245,8 @@ Selenium WebDriver Module no. 3
             1. The value of locator that might be wrong.
             2. Value of locator may be dynamic in nature.
             3. Synchronization issue.
-        3. InvalidSelectorException: The value of locator is in wrong format.    
+        3. InvalidSelectorException: The value of locator is in wrong format. 
+        4. TiimeOutException: the specified URl is not loading within 30 seconds.   
 
 
         WebElement
@@ -357,6 +358,41 @@ Synchronization is the process of adjusting the speed of tool with speed of the 
 		b. its is application for single statement only
 		c. can use for condition wait (isalertpresent, isselected, isDisplayed etc.)
 	4. fluentWait.	
+	5. PageLoadTimeout: 
+	     a. Used to avoid timeOutException which is caused due to page not loaded in given time period.
+	
+	
+	
+	
+	.dataTable th   -6 
+	//table[@class='dataTable']/thead/tr/th -6
+	//table[@class='dataTable']//th   -- 6 
+	
+	//table[@class='dataTable']/tbody/tr/td/a   -- return each link present in tr/td
+	
+	//table[@class='dataTable']/tbody/tr[1]/td[1]/a  -- this would return test link of first column of first row.
+	
+	tr -- rows of the table
+	td - column of the table.
+		
+		
+		//table[@class='dataTable']/tbody/tr[1]/td[1]/a  - text from 1 row 1 column 
+		
+		//table[@class='dataTable']/tbody/tr[2]/td[1]/a
+		
+		
+		//table[@class='dataTable']/tbody/tr[2]/td[1]/a  
+		
+		//table[@class='dataTable']/tbody/tr[3]/td[1]/a
+		//table[@class='dataTable']/tbody/tr[4]/td[1]/a
+		
+		//table[@class='dataTable']/tbody/tr[5]/td[1]/a 
+
+
+				if i want to print text from 1column of each row	
+				
+				//table[@class='dataTable']/tbody/tr  - no of row present in table.	
+		
 		
 
 
