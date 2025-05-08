@@ -59,6 +59,29 @@ Assignments
 14. https://www.redbus.in/ with explicit and fluent wait.
 15. navigate to https://www.cricbuzz.com/live-cricket-scorecard/115345/kkr-vs-csk-57th-match-indian-premier-league-2025
 	and print complete web table data(scoreboard) in to console.
+16.Open https://www.rediff.com/ 
+	a.	Click on Money
+	b.	Click on More Gainers
+	c.	Display title of all the headers
+	d.	Display total no of rows
+	e.	Display any row randomly
+	f.	Display list of all the companies (Company name only)
+	g.	Read all current price and display the highest price.
+		(Read all the current price, store in array and then sort an array so you will get highest price)
+17.	Open a webpage that has a link to open a new tab or window (e.g., https://demoqa.com/browser-windows).
+	Click the Alert,Frame & Windows
+	Click on Browser Window
+	Write an automation scripts to handle window on 
+		1. New Tab  - get and print message from tab
+		2. New Window - get and print message from window
+		3. New Window Message.	- get and print message from window	
+18 navigate to https://omayo.blogspot.com/ and automate all alert related scenario.
+19. Navigate to https://omayo.blogspot.com/		
+    a. Click on Selenium Tutorial link.
+    b. get the title
+    c. Click on  check our youtube channel.
+    d. get validate youtube window title.
+
 
      
      

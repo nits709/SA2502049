@@ -394,15 +394,52 @@ Synchronization is the process of adjusting the speed of tool with speed of the 
 				//table[@class='dataTable']/tbody/tr  - no of row present in table.	
 		
 		
+		Cricbuzz xpath's
+		 getting number of rows -->1.		//*[@id="innings_1"]/div[1]/div   -- 15
+		 getting number of column -->       //*[@id="innings_1"]/div[1]/div[3]/div  - 8 
+		
+		
+		
+		
+
+	1.		//*[@id="innings_1"]/div[1]/div[3]/div[1]/a
+	        //*[@id="innings_1"]/div[1]/div[4]/div[1]/a
 
 
 
+          //*[@id="innings_1"]/div[1]/div[3]/div[2]/span
+          //*[@id="innings_1"]/div[1]/div[3]/div[3]
+          //*[@id="innings_1"]/div[1]/div[3]/div[4]
+          //*[@id="innings_1"]/div[1]/div[3]/div[7]
+          
+          
+          
+          //*[@id="innings_1"]/div[1]/div[4]/div[1]/a
+          //*[@id="innings_1"]/div[1]/div[4]/div[2]
 
 
+	Alert is an interface in selenium webdriver(consider special class)
+	1. Alert can handle from browser itself
+	2. until handle alert user block to access rest of website
+	3. type of alert 
+		normal alert , prompt alert, confirmation alert
+		1.what is normal alert - where user need to accept the alert only. by click on ok button
+		2.prompt alert -> user have enter or supply some input in form of text and provide confirmation by clicking 
+		 				ok or cancel button
+		3.Confirmation alert - user needs to provide their intreset in form of consent by click on ok or cancel button.
 
-
-
-
+	1 how to automate alert : selenium webdriver we have special class called alert (interface)
+					  alert interface having function accept() and dismiss()
+					 for ok --> accept()
+					 for cancel ---> dismiss() 
+					 alert support sendkeys function to enter input
+					 
+					 
+		--> browser --> application --> inspect element ---> click --. alert appears.	
+			driver object
+			user need to switch from driver to alert	
+			driver.switchto.alert()	 
+						
 
 
 
