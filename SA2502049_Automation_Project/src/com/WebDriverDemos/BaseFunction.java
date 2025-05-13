@@ -32,6 +32,8 @@ public class BaseFunction {
 	public static void launchURL(String url) {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		driver.get(url); // 30 seconds waits inbuild. 40 sec.
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
 	public static void sleep() {

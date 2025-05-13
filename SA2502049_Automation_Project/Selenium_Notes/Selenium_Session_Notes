@@ -440,6 +440,14 @@ Synchronization is the process of adjusting the speed of tool with speed of the 
 			user need to switch from driver to alert	
 			driver.switchto.alert()	 
 						
+						
+						
+1. Action class in Selenium WebDriver.
+	a. Mouse Hover.
+	b. Right Click
+	c. Left Click
+	d. Drag and Drop
+	e. Double Click.						
 
 
 
