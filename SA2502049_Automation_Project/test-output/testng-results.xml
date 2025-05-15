@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-14T22:07:01 IST" name="Default suite" finished-at="2025-05-14T22:07:01 IST" duration-ms="132">
+    <groups>
+    </groups>
+    <test started-at="2025-05-14T22:07:01 IST" name="Default test" finished-at="2025-05-14T22:07:01 IST" duration-ms="132">
+      <class name="testNGDemos.TNG_04_BeforeMethod_AfterMethod">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="launchBrowser" finished-at="2025-05-14T22:07:01 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginFaceBook()[pri:2, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="loginFaceBook" finished-at="2025-05-14T22:07:01 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFaceBook -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="closeBrowser" finished-at="2025-05-14T22:07:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="launchBrowser" finished-at="2025-05-14T22:07:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginMyntra()[pri:3, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="loginMyntra" finished-at="2025-05-14T22:07:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginMyntra -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="closeBrowser" finished-at="2025-05-14T22:07:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginstarAgile()[pri:4, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="loginstarAgile" finished-at="2025-05-14T22:07:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginstarAgile -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="launchBrowser" finished-at="2025-05-14T22:07:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGDemos.TNG_04_BeforeMethod_AfterMethod@15c43bd9]" started-at="2025-05-14T22:07:01 IST" name="closeBrowser" finished-at="2025-05-14T22:07:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNGDemos.TNG_04_BeforeMethod_AfterMethod -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

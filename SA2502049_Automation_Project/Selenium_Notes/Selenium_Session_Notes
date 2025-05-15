@@ -450,6 +450,30 @@ Synchronization is the process of adjusting the speed of tool with speed of the 
 	e. Double Click.						
 
 
+	TestNG(Next Generation) - Apache Foundation its an open source/Free to use.
+	One of the most popular unit testing framework.
+	
+	1. Advantages
+	 a. Makes Automation test execution easier.
+	 b. You can group or collection of multiple tc's
+	 c. set priority of testcases - 
+	     login - class --> testA, testB, testC 
+	 d. Uses Annotations.
+	 	a. @Test  - stands for testcases.
+	 	b  @BeforeTest -- if wanna execute something before my test executes 
+	 	c. @AfterTest
+	 	d. @BeforeMethod
+	 	d. @AfterMethod
+	 	e. @DataProvider
+	 	f. @BeforeClass
+	 	g. @AfterClass.
+	 e. Allows to generate testexecution reports.
+	    a. normal report
+	    b. html report - extent reports.
+	 f.  multiple testcase in single go on single browser 
+	     single testcases on multiple browser   
+	 g. allow users to reuse the script of selenium.    
+	      	   
 
 
 
