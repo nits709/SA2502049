@@ -81,6 +81,81 @@ Assignments
     b. get the title
     c. Click on  check our youtube channel.
     d. get validate youtube window title.
+ ------------------------------------------------------------------------------------------------------
+ 20. Open https://www.rediff.com/ 
+	a.	Click on Money
+	b.	Click on More Gainers
+	c.	Display title of all the headers
+	d.	Display total no of rows
+	e.	Display any row randomly
+	f.	Display list of all the companies (Company name only)
+	g.	Read all current price and display the highest price.
+	(Read all the current price, store in array and then sort an array so you will get highest price)
+----------------------------------------------------------------------------------------------------
+21.	Assignment for TestNG
+	a.	Launch Browser
+	b.	Open https://www.amazon.in/
+	c.	Print the title
+	d.	Click on Sell link
+	e.	Print the title
+	f.	Open https://www.amazon.in/
+	g.	Print the title
+	h.	Click on Best Sellers link
+	i.	Print the title
+	j.	Open https://www.amazon.in/
+	k.	Print the title
+	l.	Click on Mobiles link
+	m.	Print the title
+	n.	Open https://www.amazon.in/
+	o.	Print the title
+	p.	Click on Best Electronics link
+	q.	Print the title
+	r.	Close the browser
+-----------------------------------------------------------------------	
+22.	Open https://demoqa.com/automation-practice-form
+a.	Enter or select your birth date
+------------------------------------------------------------------------
+23.	Open https://dash.bling-center.com/platform/signIn.html 
+a.	Click on forgot password
+b.	Enter email id
+c.	Enter email id
+d.	Click on Reset Password
+e.	Display the messages (in green color)
+---------------------------------------------------------------------------------
+24.	Open https://register.rediff.com/register/register.php?FormName=user_details 
+a.	Select your birth date
+b.	Display the birth date as 
+e.g. My Birth Date is 01 JAN 2000
+----------------------------------------------------------------------------------
+25. Open https://sampleapp.tricentis.com/101/index.php
+	a. Click on Automobile
+	b. Fill all the fields on this page
+	c. Click on Next Button
+	d. Fill all the fields on this page as well
+	e. Select the picture
+	f. If possible fill the next form as well
+26. Open https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+	a. Login with Admin 
+	b. Click on PIM
+	c. Click on + Add button
+	d. Enter First Name 
+	e. Enter Middle Name
+	f. Enter Last Name
+	g. Click on Create Login Details
+	h. Enter User Name
+	i. Enter Password
+	j. Enter Confirm Password
+	k. Click on Save Button
+	l. Logout
+
+	m. Login using data provided in step no h & i
+	n. Display name of employee on logout link
+	o. Click on My Info
+	p. Display the Employee ID
+	q. Logout
+	
+	
+    
 
 
      

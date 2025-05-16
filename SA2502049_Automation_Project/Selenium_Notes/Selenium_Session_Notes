@@ -474,6 +474,35 @@ Synchronization is the process of adjusting the speed of tool with speed of the 
 	     single testcases on multiple browser   
 	 g. allow users to reuse the script of selenium.    
 	      	   
+	      	   
+	      	   
+		What is parameterization?	
+		Execute single or same or stable feature/functionality multiple time with different or same set of data.    
+	
+		automation objective is 
+		writes once and run many times  	   
+		
+		
+		login - 1000
+		Open browser
+		open URL
+		Enter Username
+		Password
+		Click on submit
+		Logout
+		
+		loop -- 1000
+		 would run for single set of testData.
+		Open browser
+		open URL
+		Enter Username
+		Password
+		Click on submit
+		Logout
+	      	   
+	      	   end to end - placing order scenario for 10 times
+	      	   
+	      	   
 
 
 
