@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGDemos.TNG_07_PracticalImplimentationOfDP">
+      <class name="testNGDemos.TNG_08_RandomAmazonScripts">
         <methods>
-          <include name="loginHRM" invocation-numbers="0 1"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="stopExecution"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="testSellLink"/>
+          <include name="openAmazon"/>
         </methods>
-      </class> <!-- testNGDemos.TNG_07_PracticalImplimentationOfDP -->
+      </class> <!-- testNGDemos.TNG_08_RandomAmazonScripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

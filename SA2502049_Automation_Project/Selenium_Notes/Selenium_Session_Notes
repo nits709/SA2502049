@@ -503,6 +503,72 @@ Synchronization is the process of adjusting the speed of tool with speed of the 
 	      	   end to end - placing order scenario for 10 times
 	      	   
 	      	   
+	      	   
+	      	   
+	    
+	    
+	    Selenium | WebDriver Module
+	    
+	    1. We have started with Selenium webdriver.  	
+	       a. learn methods to automate websites.
+	       b. testNG - we are learning test execution | management
+	           1. anotations 
+	           2. Assertions
+	           3. better executions.
+	           4. read data from external sources.
+	       c. Create framework.
+	          
+	    
+	    
+	    1. ScreenShot
+	    2. Assertions
+	    3. Better Execution - XML.
+	    4. Scroll method.      
+	      	   
+	      	   
+	
+	
+	
+	Driver.close
+	
+	1 open chrome browser
+	2. launch amazon
+	3. driver.close
+	       	   
+	       	   
+	       	   
+	       	   open chrome browser
+	       	   launch amazon
+	       	   click on sell link
+	       	   new tab 
+	       	   switchmy control to new tab
+	       	   get the title of the page
+	       	   driver.close()  |  closes the current active browser window/tab.
+	       	   
+	       	   driver.quit() |  Closes all browser window/tab opened during single session.
+	       	   and release webdriver object | ends the webdriver session entirely.
+	       	   
+	       	   
+Assertions in TestNG
+
+ what is assertion | which help to validate a conditions and check values of two object, variables whether equal or not.	       	   
+	
+	two type of assertions
+	 1. hard Assertion  - check the condition and values, if condition and values are not match stop the execution. 
+	 2. soft assertions - check the condition and values, if condition and values are not match it will throw 
+	                      exception and continue with execution  
+	                      
+	     Hard assertion | checking element existence | payment page | checkoutpage
+	     SoftAssertion | checking page title| company logo, check text (which consider a cosmetics defects.)     
+	     
+	     1. assertTrue  -- check the conditions   ==
+	     2. assertEquals -- check the values are equal or not.     string.equals   
+	     
+	     
+	     
+	     
+	     
+	     for skipping the test in testng use enabled method and set value to false.        	   
 
 
 

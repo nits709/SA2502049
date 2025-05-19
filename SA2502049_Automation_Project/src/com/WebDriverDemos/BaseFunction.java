@@ -38,7 +38,7 @@ public class BaseFunction {
 
 	public static void sleep() {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 		} catch (Exception e) {
 			e.getMessage();
 		}
