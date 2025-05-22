@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGDemos.TNG_08_RandomAmazonScripts">
+      <class name="com.KeywordDriver.properties.keyWordApproach_ReadFromPropertiesFile">
         <methods>
-          <include name="stopExecution"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="testSellLink"/>
-          <include name="openAmazon"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="LoginHRM"/>
         </methods>
-      </class> <!-- testNGDemos.TNG_08_RandomAmazonScripts -->
+      </class> <!-- com.KeywordDriver.properties.keyWordApproach_ReadFromPropertiesFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

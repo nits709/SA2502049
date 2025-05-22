@@ -20,57 +20,58 @@ public class TNG_08_RandomAmazonScripts extends BaseFunction {
 
 	String expecteUTL = "https://www.nitin.in/b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3";
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void openBrowser() {
 		launchBrowser("Chrome");
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void openAmazon() {
 		launchURL("https://www.amazon.in/");
 		sleep();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = "Sell")
 	public void testSellLink() {
-	//	driver.findElement(By.linkText("Sell")).click();
+		driver.findElement(By.linkText("Sell")).click();
 
-	//	String currentURL = driver.getCurrentUrl();
+		// String currentURL = driver.getCurrentUrl();
 		System.out.println("testSellLink");
-		
-		//Assert.assertEquals(currentURL,expecteUTL," sell url is invalid, please verify");
-		
+
+		// Assert.assertEquals(currentURL,expecteUTL," sell url is invalid, please
+		// verify");
+
 		// takeScreenShots();
 	}
 
-	@Test(priority = 2, enabled=false)
+	@Test(priority = 2, groups = "Sell")
 	public void testBestSellerLink() {
-		//driver.findElement(By.partialLinkText("Best")).click();
+		driver.findElement(By.partialLinkText("Best")).click();
 		System.out.println("testBestSellerLink");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, groups = "Devices")
 	public void testElectronicLink() {
-		//driver.findElement(By.partialLinkText("Electronics")).click();
+		// driver.findElement(By.partialLinkText("Electronics")).click();
 		System.out.println("testElectronicLink");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4, groups = "Devices")
 	public void testMobilesLink() {
-		//driver.findElement(By.partialLinkText("Mobiles")).click();
+		// driver.findElement(By.partialLinkText("Mobiles")).click();
 		System.out.println("testMobilesLink");
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void closeBrowser() {
 		System.out.println("execution done!");
 		takeScreenShots();
 	}
 
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void stopExecution() {
 		driver.quit(); //
-		//driver.close(); // amazon.com
+		// driver.close(); // amazon.com
 	}
 
 	public void takeScreenShots() {

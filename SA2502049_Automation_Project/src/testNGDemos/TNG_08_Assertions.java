@@ -1,12 +1,12 @@
 package testNGDemos;
 
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import graphql.Assert;
 
 public class TNG_08_Assertions {
 	
-
-	public static void main(String[] args) {
+	@Test
+	public void testA(){
 		
 		
 //		System.out.println("A");

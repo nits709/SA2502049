@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+	<test name="MyTest">
+		<classes>
+			<class name="testNGDemos.TNG_08_RandomAmazonScripts">
+			</class>
+		</classes>
+		<groups>
+			<run>
+				<include name="Sell"></include>
+				<!-- <exclude name="Sell"></exclude> -->   
+			</run>
+		</groups>
+	</test>
+</suite>

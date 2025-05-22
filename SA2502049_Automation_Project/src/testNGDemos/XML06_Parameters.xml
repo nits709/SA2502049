@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+	<test name="MyTest">
+
+		<parameters>
+			<parameter name="Username" value="Student123">
+			</parameter>
+			<parameter name="Password" value="Smart@123">
+			</parameter>
+		</parameters>
+
+		<classes>
+			<class name="testNGDemos.TNG_05RandomScenarioWithTestNG">
+			</class>
+		</classes>
+
+	</test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite"  thread-count="4"  parallel="methods">
+	<test name="MyTest">
+		<classes>
+			<class name="testNGDemos.TNG_08_Scripts_For_ParallelExecution">
+			</class>
+		</classes>
+		<!-- <groups>
+			<run>
+				<include name="Sell"></include>
+				<exclude name="Sell"></exclude>   
+			</run>
+		</groups> -->
+	</test>
+</suite>

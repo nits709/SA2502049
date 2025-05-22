@@ -572,9 +572,64 @@ Assertions in TestNG
 
 
 
+Cron jobs  - 30 4 * * *   - 4:30 in morning 
+		     30 16 * * *  - 4:30 in evening
+		     30 16 * * * -   4:30 in evening on every monday
+		     
+		     
+		     
+		     What is testsuite
+		      collection of multiple testcase - manual
+		      collection of multiple testscripts - automation.
+		      
+		      
+		      
+		      With testng.xml 
+		      	- single execution
+		      	- multiple execution
+		      	- execution from class -- all testcases.
+		      	- skip testcases - enabled - true. - means skip | false mean execute.
+		      	- parallel execution 
+		      	 		5 
+		      	- Smoke, Sanity, Regression, UAT 	| grouping	
+					5,   12,    40,     20
+					
+				- Amazon | Register |	Login  |
+				
+				
+				
+				
+				
+				
+				
+	1. How many types we have in automation (selenium through which we can reads the data)
+	
+		What is parameterization 
+		1.  execute single testcases with multiple sets of data.
+		2.  check the stable functionality or web application.		
+		
+		
+		1. properties. 
+		2. xlsx file - excel file.
+		3. xml file.
+		
+		
+		How many type of frameworks?
+		1. Keyword driven
+		2. DataDriven
+		3. Moduler
+		4. Hybrid
+		5. BDD
+		6. Page Object Model	
 
 
+1. how to work with properties files;
 
+	1. Create object of	File -class and supply the file path to that class.
+	2. Whenever we are reading data from external --- java will read the data in-form of streams.
+		stream is channel where data flows  
+	3. Create object of fileInputStream
+	4. Create object of properties class.
 
 
 
