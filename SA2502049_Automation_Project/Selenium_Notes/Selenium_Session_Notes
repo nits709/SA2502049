@@ -634,6 +634,64 @@ Cron jobs  - 30 4 * * *   - 4:30 in morning
 
 
 
+ DataDriven Scenario with ExcelFile
+ testscripts driven by testData
+ 
+ 1. reading the data from excel file to execution functionality/ testcases
+ 2. to Open multiple URL's and validate the title of page., then write the URL and title into excel files.
+ 3. get the data from webTable -cricket score match., write same data into excel file.
+ 
+ 
+ 1.  Reading the data from excel  -  FileInputStream | when you are reading data
+ 2.  Writing data into excel file -  FileOutputStream | When to write a data in file.
+ 
+ 
+ 		1. Create an object of File
+ 		2. Create an object of FileInputStream/OutPutStream.
+ 		3. Create an object of workbook
+ 		4. Create a reference of Sheet
+ 		5. Create a reference of Rows
+ 		6. Create a reference of column | cell
+ 		
+ 		
+ 		Workbook --> Sheet --> Rows --- cell
+ 		
+ 		
+ 		File --> FileInputStream --> Workbook --> Sheet --> Rows --- cell
+ 		
+ 		File --> FileOutPutStream --> Workbook --> Sheet --> Rows --- cell
+ 		
+ 		
+ 		
+ 		
+ 		type of excel file extension.
+ 		
+ 		.xls  excel file version from 97-2003
+ 		.xlsx after MS office 2007 
+ 		
+ 		.xls HSSFWorkbook  | outdated.
+ 		.xlsx XSSFWorkbook  | going on.
+ 		
+ 		
+ 		Configure POI int selenium project
+ 		1. goto POI library folder
+ 		2. select 8 jar files.
+ 		3. goto --> lib - select 6 files
+ 		4. goto --> 00xml-lib --> 7 files  == 21 files need to configured.
+ 
+ 		
+ 		
+ 		
+ 		
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
 
 
 

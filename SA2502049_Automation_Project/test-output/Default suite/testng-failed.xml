@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.KeywordDriver.properties.keyWordApproach_ReadFromPropertiesFile">
+      <class name="com.DataDriverUsingExcel_POI.ReadDataFromExcelFile">
         <methods>
+          <include name="readDataFromExcelFile"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="LoginHRM"/>
         </methods>
-      </class> <!-- com.KeywordDriver.properties.keyWordApproach_ReadFromPropertiesFile -->
+      </class> <!-- com.DataDriverUsingExcel_POI.ReadDataFromExcelFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
