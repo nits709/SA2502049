@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DataDriverUsingExcel_POI.ReadDataFromExcelFile">
+      <class name="testNGDemos.TNG_05RandomScenarioWithTestNG">
         <methods>
-          <include name="readDataFromExcelFile"/>
+          <include name="loginHRM"/>
+          <include name="afterMethod"/>
+          <include name="printVariables"/>
           <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.DataDriverUsingExcel_POI.ReadDataFromExcelFile -->
+      </class> <!-- testNGDemos.TNG_05RandomScenarioWithTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

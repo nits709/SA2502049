@@ -13,7 +13,7 @@ public class TNG_05RandomScenarioWithTestNG extends BaseFunction {
 
 	
 	
-	@Parameters({"Username","Password"})  // read the value from XML
+	@Parameters({"Username","Password"}) // read the value from XML
 
 
 	@BeforeTest

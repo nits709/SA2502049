@@ -2,7 +2,7 @@
 <suite name="My Suite"  thread-count="4"  parallel="methods">
 	<test name="MyTest">
 		<classes>
-			<class name="testNGDemos.TNG_08_Scripts_For_ParallelExecution">
+			<class name="testNGDemos.TNG_08_RandomAmazonScripts">
 			</class>
 		</classes>
 		<!-- <groups>

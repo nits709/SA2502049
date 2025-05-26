@@ -147,7 +147,6 @@ e.g. My Birth Date is 01 JAN 2000
 	j. Enter Confirm Password
 	k. Click on Save Button
 	l. Logout
-
 	m. Login using data provided in step no h & i
 	n. Display name of employee on logout link
 	o. Click on My Info
@@ -155,6 +154,7 @@ e.g. My Birth Date is 01 JAN 2000
 	q. Logout
 	
 	POI Assignments
+	
 28. Create an Excel file loginData.xlsx with columns: Username, Password.
     Read each row using Apache POI.
     Open the login page of a demo website (e.g., https://the-internet.herokuapp.com/login).
@@ -171,6 +171,10 @@ e.g. My Birth Date is 01 JAN 2000
    3.Validate form submission and log the result (e.g., Submitted, Error) back to the Excel file.
 31. Write WebTable Data into excel file 
     1. Use a page like https://www.techlistic.com/p/demo-selenium-practice.html.
+    
+    		OR
+    		
+    https://www.cricbuzz.com/live-cricket-scorecard/91778/aus-vs-ind-1st-test-india-tour-of-australia-2024-25		
     2. Read web table data and write into excel.
    
 	

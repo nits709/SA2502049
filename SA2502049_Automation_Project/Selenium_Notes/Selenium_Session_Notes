@@ -678,6 +678,63 @@ Cron jobs  - 30 4 * * *   - 4:30 in morning
  		2. select 8 jar files.
  		3. goto --> lib - select 6 files
  		4. goto --> 00xml-lib --> 7 files  == 21 files need to configured.
+ 		
+ 		
+====================================================================================================================== 		
+ 		
+ 	Maven:
+ 	1. Maven is product of Apache company
+ 	2. Maven is buil management tool
+ 	3. Can use both developer and tester.
+ 	4. Maven user centralized repository to keep the project version.
+ 	
+	Benefits
+	1. Configuration is way easy with maven project.	
+	2. Dependencies  | Library
+	   Selenium | testng | POI |Extend report
+	3. POM.xml - very case sensitive.
+	4.Project version control makes very easier with maven.   
+	
+	
+	
+	Builds
+	want to develop an application like whatsapp.
+	Chats
+	audio call
+	video call
+	Status
+	ProfilePic
+	
+	chats feature -- -release version_1.0   -- first build 
+	Audio call ---- release version 2.0 --- seconds build
+	
+	
+	Steps to create maven project
+	1. File -> New -> Maven project
+	2. Select the first checkbox
+    3.Click on next button
+    4. enter group id and Artifact ID
+         groupID(Package Name)
+         ArtifactID (Project Name)
+    5. click on Finish button
+
+
+		Maven Project
+			src / main /java
+			           / resources
+			
+			src/ test / java
+			         / resources
+			         
+			         
+			         
+       all testing resources (creating testcases and testData will keep inside) src/ test/ java location.
+       all functions and there resources -- src /main / java 
+       
+       
+       	Testcases - src/test/java  -->  Login1 
+       		Excel - src/ test/ resources - credentails.xlsx
+	
  
  		
  		

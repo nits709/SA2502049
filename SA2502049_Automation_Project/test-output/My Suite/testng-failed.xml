@@ -8,6 +8,9 @@
       <class name="testNGDemos.TNG_05RandomScenarioWithTestNG">
         <methods>
           <include name="loginHRM" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
       </class> <!-- testNGDemos.TNG_05RandomScenarioWithTestNG -->
     </classes>

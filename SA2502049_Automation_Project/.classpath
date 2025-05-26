@@ -29,5 +29,6 @@
 	<classpathentry kind="lib" path="/Volumes/Renuka/Jar_Repository/poi-bin-5.2.3/ooxml-lib/xmlbeans-5.1.1.jar"/>
 	<classpathentry kind="lib" path="/Volumes/Renuka/Jar_Repository/poi-bin-5.2.3/ooxml-lib/commons-compress-1.21.jar"/>
 	<classpathentry kind="lib" path="/Volumes/Renuka/Jar_Repository/poi-bin-5.2.3/ooxml-lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Volumes/Renuka/Jar_Repository/extentreports-5.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

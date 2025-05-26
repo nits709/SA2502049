@@ -4,7 +4,6 @@ package HandlingAlert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
-
 import com.WebDriverDemos.BaseFunction;
 
 public class SA_26HandlingPromptAlert extends BaseFunction {
