@@ -28,7 +28,8 @@ public class WriteTheDataIntoExcelFile {
 
 		rows = sheet.createRow(0);  // create a row at zero index
 		cell = rows.createCell(0);  // create a cell inside row at zero index.
-		cell.setCellValue("Piyush");
+		cell.setCellValue(20);
+		
 	}
 
 	@BeforeTest

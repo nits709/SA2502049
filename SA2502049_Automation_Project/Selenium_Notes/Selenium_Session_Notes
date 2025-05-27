@@ -735,6 +735,166 @@ Cron jobs  - 30 4 * * *   - 4:30 in morning
        	Testcases - src/test/java  -->  Login1 
        		Excel - src/ test/ resources - credentails.xlsx
 	
+	
+	BDD - Behavioral Driven Development
+	
+	What is requirement? Expected result / outcome.
+	
+	requirements (BRS/TRS) will be shared with QA Team.
+	1. QA Team , create a testing scenario's form documents.(Usecases)
+	 Login scenario 
+	 	 check scenario 
+	 	 Username -  V  |  IV  | IV  |  V
+	 	 Password -  V  |  IV  | V   | IV
+	 	 submit
+	 	 
+	 	 Create a testcases -- Manual testing
+	 	 
+	 	 BDD - 
+	 	 Features  - File , which contains no. of test scenario's (create by QA team.)
+	 	 Then this feature file will be shared with
+	 	 1. Developer - so that they can create an application
+	 	 2. Manual Tester - so that create manual testcases
+	 	 3. Automation tester - so can create an automation scripts.
+	 	 
+	 	 this will be the 1st component of BDD.
+	 	 
+	 	 
+	 	 Now Automation roles in BDD.
+	 	 will create an automation scripts Glue Code/Step definitions (second component of BDD)
+	 	 
+	 	 For execution of automation scripts we need an executor. Runner file. (third component of BDD)
+	 	 
+	 	 1. Features File --> Step Definition/Gluecode ----> Runnner Files.
+	 	 	
+	 	 	In order to right scenario in feature file we use Gherkin Langugage (Plain simple english)
+	 	 	Cucumber is library
+	 	 	Cucumber is used to implement BDD framework.
+	 	 	
+	 	 	
+	 Creating a cucumber Project.
+	 1. File --> New -- Maven Project
+	 2. Select 3rd checkbox --> next
+	 3. type "io.cucumber" as filter --> next
+	 4. Enter archtypeID and groupID --> finish
+	 
+	 5. Select <Properties>(Line no. 12) to </depedencies> (line no.66)
+	 6 . Paste below  code in pom.xml
+	 		<properties>
+				<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+				 <java.version>11</java.version>
+				<junit.version>4.13.1</junit.version>
+				<cucumber.version>6.8.2</cucumber.version>
+				<cucumber.version>6.9.0</cucumber.version>
+			</properties>
+		<dependencies>
+			<!--  https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java  -->
+			<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.28.1</version>
+			</dependency>
+			<dependency>	
+			<groupId>io.cucumber</groupId>
+<artifactId>cucumber-java</artifactId>
+<version>${cucumber.version}</version>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-junit</artifactId>
+<version>${cucumber.version}</version>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>${junit.version}</version>
+<scope>test</scope>
+</dependency>
+</dependencies>
+
+
+	7. go to eclipse marketplace from help menu.
+	8. need to download plugins called -- cucumber
+	   1. search cucumber --> click on install button under cucumber eclipse plugin
+	   
+	   
+	   
+	   Feature File
+	    1. Collection of test scenario's
+	    2. Created a scenario/ testcases by using gherking langugage.
+	    3. extension of feature file --.feature
+	    4. Contains Keywords. 
+	         Feature:    -- represents requirements 
+	         Feature: This feature file would hold test scenario of login page.
+	         
+	         Scenario: - Test objective.
+	         Given - pre-condition / pre-steps
+	         When - Steps
+	         And/But - combine multiple steps
+	         Then - to check excepted condition.
+	         Background - For Multiple Given steps.
+	         Examples: Data Driven testing(Used to pass the data to step definition)
+	         Scenario Outline: Used in data driven testing.
+	         
+	         
+	         
+	   To validate title of google page.   
+	   		1. Open Google
+	   		2. Read Title
+	   		3. Validate title.  
+	   		
+	   		
+	   		
+	   		Feature:  This feature file would hold test scenario of login page.
+	   		
+	   		
+	   		BackGround:
+	   		Given The user launch browser
+	   		Given The user launch application URL
+	   		
+	   		Scenario: To validate title of google page
+	   		When The user gets title of google page
+	   		Then The use validates title of google page.
+	   		
+	   		
+	   		Scenario: To validate search feature of google.
+	   		When The user search the data
+	   		Then  The user validates searched data
+	   		
+	   		
+	   		
+	   		Steps Definition.
+	   		1. It is a normal java class
+	   		2.Using cucumber annotations
+	   		3. Contains automation scripts.
+	   		
+	   		
+	   		Runner File (Executor)
+	   		1. Normal Java Class
+	   		2. Using Junit Annotations
+	   		3. Purpose to execute the automation scripts is covers test steps.
+	   		
+	   		Java -- this is cucumber runner.
+	   		1. @RunWith(Cucumber.class)
+	   		2. @CucumberOptions(feature path, step definition path.)
+	   		
+	   		
+	   		
+	
+	 
+	 	 	
+	 	 	
+	 	 	
+	 	 
+	 	 
+	 	 
+	 	 
+	 	
+	 	 
+	
+	
  
  		
  		

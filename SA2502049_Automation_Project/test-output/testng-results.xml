@@ -1,131 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-25T20:53:53 IST" name="My Suite" finished-at="2025-05-25T20:54:45 IST" duration-ms="52725">
+  <suite started-at="2025-05-27T11:23:51 IST" name="Default suite" finished-at="2025-05-27T11:23:52 IST" duration-ms="695">
     <groups>
     </groups>
-    <test started-at="2025-05-25T20:53:53 IST" name="MyTest" finished-at="2025-05-25T20:54:45 IST" duration-ms="52725">
-      <class name="testNGDemos.TNG_05RandomScenarioWithTestNG">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testNGDemos.TNG_05RandomScenarioWithTestNG@44ebcd03]" started-at="2025-05-25T20:53:53 IST" name="beforeTest" finished-at="2025-05-25T20:53:58 IST" duration-ms="5723" status="PASS">
+    <test started-at="2025-05-27T11:23:51 IST" name="Default test" finished-at="2025-05-27T11:23:52 IST" duration-ms="695">
+      <class name="com.DataDriverUsingExcel_POI.CreateLoginData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.DataDriverUsingExcel_POI.CreateLoginData@59309333]" started-at="2025-05-27T11:23:51 IST" name="beforeTest" finished-at="2025-05-27T11:23:51 IST" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNGDemos.TNG_05RandomScenarioWithTestNG@44ebcd03]" started-at="2025-05-25T20:53:58 IST" name="beforeMethod" finished-at="2025-05-25T20:54:05 IST" duration-ms="7064" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="loginHRM(java.lang.String,java.lang.String)[pri:0, instance:testNGDemos.TNG_05RandomScenarioWithTestNG@44ebcd03]" started-at="2025-05-25T20:54:05 IST" name="loginHRM" finished-at="2025-05-25T20:54:41 IST" duration-ms="35220" status="FAIL">
+        <test-method signature="setLoginData(java.lang.String,java.lang.String,java.lang.Integer)[pri:0, instance:com.DataDriverUsingExcel_POI.CreateLoginData@59309333]" started-at="2025-05-27T11:23:51 IST" name="setLoginData" data-provider="getLoginData" finished-at="2025-05-27T11:23:52 IST" duration-ms="34" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Student123]]>
+                <![CDATA[UserName]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Smart@123]]>
+                <![CDATA[Password]]>
               </value>
             </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/i"}
-  (Session info: chrome=137.0.7151.41)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '4ae8fc9f8a'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3f582c4aac8674e77086d8aa45b09312, findElement {value=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/i, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.41, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: /var/folders/rl/ytnk6vbs63s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52000}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52000/devtoo..., se:cdpVersion: 137.0.7151.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f582c4aac8674e77086d8aa45b09312]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/i"}
-  (Session info: chrome=137.0.7151.41)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '4ae8fc9f8a'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3f582c4aac8674e77086d8aa45b09312, findElement {value=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/i, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.41, chrome: {chromedriverVersion: 137.0.7151.40 (84781974514a..., userDataDir: /var/folders/rl/ytnk6vbs63s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52000}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52000/devtoo..., se:cdpVersion: 137.0.7151.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f582c4aac8674e77086d8aa45b09312
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at testNGDemos.TNG_05RandomScenarioWithTestNG.loginHRM(TNG_05RandomScenarioWithTestNG.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginHRM -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNGDemos.TNG_05RandomScenarioWithTestNG@44ebcd03]" started-at="2025-05-25T20:54:41 IST" name="afterMethod" finished-at="2025-05-25T20:54:43 IST" duration-ms="2007" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNGDemos.TNG_05RandomScenarioWithTestNG@44ebcd03]" started-at="2025-05-25T20:54:43 IST" name="beforeMethod" finished-at="2025-05-25T20:54:43 IST" duration-ms="647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="printVariables(java.lang.String,java.lang.String)[pri:0, instance:testNGDemos.TNG_05RandomScenarioWithTestNG@44ebcd03]" started-at="2025-05-25T20:54:43 IST" name="printVariables" finished-at="2025-05-25T20:54:43 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
-                <![CDATA[Student123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Smart@123]]>
+                <![CDATA[0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printVariables -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNGDemos.TNG_05RandomScenarioWithTestNG@44ebcd03]" started-at="2025-05-25T20:54:43 IST" name="afterMethod" finished-at="2025-05-25T20:54:45 IST" duration-ms="2006" status="PASS">
+        </test-method> <!-- setLoginData -->
+        <test-method signature="setLoginData(java.lang.String,java.lang.String,java.lang.Integer)[pri:0, instance:com.DataDriverUsingExcel_POI.CreateLoginData@59309333]" started-at="2025-05-27T11:23:52 IST" name="setLoginData" data-provider="getLoginData" finished-at="2025-05-27T11:23:52 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Deepak]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Paratkar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testNGDemos.TNG_05RandomScenarioWithTestNG -->
-    </test> <!-- MyTest -->
-  </suite> <!-- My Suite -->
+        </test-method> <!-- setLoginData -->
+        <test-method signature="setLoginData(java.lang.String,java.lang.String,java.lang.Integer)[pri:0, instance:com.DataDriverUsingExcel_POI.CreateLoginData@59309333]" started-at="2025-05-27T11:23:52 IST" name="setLoginData" data-provider="getLoginData" finished-at="2025-05-27T11:23:52 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pratik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patni]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLoginData -->
+        <test-method signature="setLoginData(java.lang.String,java.lang.String,java.lang.Integer)[pri:0, instance:com.DataDriverUsingExcel_POI.CreateLoginData@59309333]" started-at="2025-05-27T11:23:52 IST" name="setLoginData" data-provider="getLoginData" finished-at="2025-05-27T11:23:52 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Soumya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tiwari]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLoginData -->
+        <test-method signature="setLoginData(java.lang.String,java.lang.String,java.lang.Integer)[pri:0, instance:com.DataDriverUsingExcel_POI.CreateLoginData@59309333]" started-at="2025-05-27T11:23:52 IST" name="setLoginData" data-provider="getLoginData" finished-at="2025-05-27T11:23:52 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rohit]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yadav]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLoginData -->
+        <test-method signature="setLoginData(java.lang.String,java.lang.String,java.lang.Integer)[pri:0, instance:com.DataDriverUsingExcel_POI.CreateLoginData@59309333]" started-at="2025-05-27T11:23:52 IST" name="setLoginData" data-provider="getLoginData" finished-at="2025-05-27T11:23:52 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mathew]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLoginData -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.DataDriverUsingExcel_POI.CreateLoginData@59309333]" started-at="2025-05-27T11:23:52 IST" name="afterTest" finished-at="2025-05-27T11:23:52 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.DataDriverUsingExcel_POI.CreateLoginData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
