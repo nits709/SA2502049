@@ -910,9 +910,27 @@ Cron jobs  - 30 4 * * *   - 4:30 in morning
 	 	JavascriptExecutor interface
 	 	 	
 	 	 	
+	 	 	
+	 	 	Page Object Model with out page factory.
+	 	 	1. With pagefactory we have to use pagefactory function (keeping page functions and its location at same class)
+	 	 	2. without pagefactory - keep function and loctors of page at same location without using pagefactory function.
+	 	 	
 	 	 
 	 	 
-	 	 
+	 	 cucumber
+	 	  Feature file --> StepsDefinition -- runner  -- 
+	 	  Page object model approach
+	 	  
+	 	  Login -- loginPage.java
+	 	  registeration -- registerationPage.java
+	 	  Checkout --- Checkoutpage.java
+	 	  PLP -- PLPage.java
+	 	  
+	 	  
+	 	  
+	 	  starts-with
+	 	  contains
+	 	  normalize-space()
 	 	 
 	 	
 	 	 

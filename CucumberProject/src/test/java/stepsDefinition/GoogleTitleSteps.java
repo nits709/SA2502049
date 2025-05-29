@@ -10,16 +10,7 @@ public class GoogleTitleSteps {
 
 	
 	
-	@Before
-	public void beforeHooks() {
-		System.out.println("Before Hooks");
-	}
-	
-	@After
-	public void afterHooks() {
-		System.out.println("after Hooks");
-	}
-	
+
 	@Given("The User Launch the Googel URL")
 	public void the_user_launch_the_googel_url() {
 	    System.out.println(" Launch Google URL  ");

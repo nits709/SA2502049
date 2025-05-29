@@ -64,6 +64,7 @@ public class TNG_08_RandomAmazonScripts extends BaseFunction {
 	public void closeBrowser() {
 		System.out.println("execution done!");
 		takeScreenShots();
+		driver.quit();
 	}
 
 	@AfterTest(alwaysRun = true)

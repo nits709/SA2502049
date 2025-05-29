@@ -17,7 +17,17 @@ Feature: this feature file holds the scenarios of
     When The User enter email "<Username>" and password "<Password>"
     When The User submit the login credentials
     Then The User validate logged in successfully
-
+    
     Examples: 
       | URL                                  | Username                | Password  |
       | https://automationexercise.com/login | nitingupta300@gmail.com | Smart@123 |
+      #| https://automationexercise.com/login | nitingupta300@gmail.com | Smart@123 |
+      #| https://automationexercise.com/login | nitingupta300@gmail.com | Smart@123 |
+      #| https://automationexercise.com/login | nitingupta300@gmail.com | Smart@123 |
+      #| https://automationexercise.com/login | nitingupta300@gmail.com | Smart@123 |
+      #| https://automationexercise.com/login | nitingupta300@gmail.com | Smart@123 |
+      #| https://automationexercise.com/login | nitingupta300@gmail.com | Smart@123 |
+      #| https://automationexercise.com/login | nitingupta300@gmail.com | Smart@123 |
+      
+
+    

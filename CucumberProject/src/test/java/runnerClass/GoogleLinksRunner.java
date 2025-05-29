@@ -7,7 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features={"src/test/resources/features/GoogleLinks.feature"},
-				glue={"stepsDefinition"})
+				glue={"stepsDefinition"},
+				tags="not @Gmail",
+				publish=true)
 public class GoogleLinksRunner {
 	
 	/*

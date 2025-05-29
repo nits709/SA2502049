@@ -8,16 +8,98 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">695</td><td></td><td></td></tr>
+<tr><th colspan="8">My Suite</th></tr>
+<tr><td><a href="#t0">MyTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">31,060</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.DataDriverUsingExcel_POI.CreateLoginData</td><td><a href="#m0">setLoginData</a></td><td rowspan="6">1748325232026</td><td rowspan="6">2</td></tr><tr class="passedeven"><td><a href="#m1">setLoginData</a></td></tr><tr class="passedeven"><td><a href="#m2">setLoginData</a></td></tr><tr class="passedeven"><td><a href="#m3">setLoginData</a></td></tr><tr class="passedeven"><td><a href="#m4">setLoginData</a></td></tr><tr class="passedeven"><td><a href="#m5">setLoginData</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">My Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MyTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">testNGDemos.TNG_08_RandomAmazonScripts</td><td><a href="#m0">closeBrowser</a></td><td rowspan="2">1748521195913</td><td rowspan="2">71</td></tr><tr class="failedeven"><td><a href="#m1">closeBrowser</a></td></tr><tr><th colspan="4">MyTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testNGDemos.TNG_08_RandomAmazonScripts</td><td><a href="#m2">testBestSellerLink</a></td><td rowspan="1">1748521195858</td><td rowspan="1">76</td></tr><tr class="failedeven"><td><a href="#m3">testSellLink</a></td><td rowspan="1">1748521195858</td><td rowspan="1">76</td></tr><tr><th colspan="4">MyTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testNGDemos.TNG_08_RandomAmazonScripts</td><td><a href="#m4">testElectronicLink</a></td><td rowspan="1">1748521195858</td><td rowspan="1">37</td></tr><tr class="passedeven"><td><a href="#m5">testMobilesLink</a></td><td rowspan="1">1748521195858</td><td rowspan="1">42</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.DataDriverUsingExcel_POI.CreateLoginData#setLoginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Soumya</td><td>tiwari</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.DataDriverUsingExcel_POI.CreateLoginData#setLoginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Rohit</td><td>Yadav</td><td>0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.DataDriverUsingExcel_POI.CreateLoginData#setLoginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Deepak</td><td>Paratkar</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.DataDriverUsingExcel_POI.CreateLoginData#setLoginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>John</td><td>Mathew</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.DataDriverUsingExcel_POI.CreateLoginData#setLoginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>UserName</td><td>Password</td><td>0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.DataDriverUsingExcel_POI.CreateLoginData#setLoginData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Pratik</td><td>Patni</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>MyTest</h2><h3 id="m0">testNGDemos.TNG_08_RandomAmazonScripts#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;org.openqa.selenium.remote.Response.getStatus()&quot; is null
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:99)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:418)
+	at testNGDemos.TNG_08_RandomAmazonScripts.closeBrowser(TNG_08_RandomAmazonScripts.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testNGDemos.TNG_08_RandomAmazonScripts#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@45ca8b8[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@51933fa7[Wrapped task = org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda/0x000000012d2f8420@78cfc756]] rejected from java.util.concurrent.ThreadPoolExecutor@411cb16c[Shutting down, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 12]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.close(JdkHttpClient.java:525)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:227)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:61)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:418)
+	at testNGDemos.TNG_08_RandomAmazonScripts.closeBrowser(TNG_08_RandomAmazonScripts.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testNGDemos.TNG_08_RandomAmazonScripts#testBestSellerLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.41)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.6&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8817958d4c43911d44b87315a701ce82, findElement {using=partial link text, value=Best}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.41, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: /var/folders/rl/ytnk6vbs63s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49880}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49880/devtoo..., se:cdpVersion: 137.0.7151.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8817958d4c43911d44b87315a701ce82
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at testNGDemos.TNG_08_RandomAmazonScripts.testBestSellerLink(TNG_08_RandomAmazonScripts.java:48)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testNGDemos.TNG_08_RandomAmazonScripts#testSellLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.41)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.6&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8817958d4c43911d44b87315a701ce82, findElement {using=link text, value=Sell}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.41, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: /var/folders/rl/ytnk6vbs63s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49880}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49880/devtoo..., se:cdpVersion: 137.0.7151.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8817958d4c43911d44b87315a701ce82
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at testNGDemos.TNG_08_RandomAmazonScripts.testSellLink(TNG_08_RandomAmazonScripts.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testNGDemos.TNG_08_RandomAmazonScripts#testElectronicLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testNGDemos.TNG_08_RandomAmazonScripts#testMobilesLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
