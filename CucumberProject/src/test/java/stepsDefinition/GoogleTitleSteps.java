@@ -1,11 +1,24 @@
 package stepsDefinition;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class GoogleTitleSteps {
 
+	
+	
+	@Before
+	public void beforeHooks() {
+		System.out.println("Before Hooks");
+	}
+	
+	@After
+	public void afterHooks() {
+		System.out.println("after Hooks");
+	}
 	
 	@Given("The User Launch the Googel URL")
 	public void the_user_launch_the_googel_url() {

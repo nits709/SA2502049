@@ -881,10 +881,33 @@ Cron jobs  - 30 4 * * *   - 4:30 in morning
 	   		2. @CucumberOptions(feature path, step definition path.)
 	   		
 	   		
+	   		Tags In Cucumber
+	   		1. Tags is used to run/execute the test cases
+	   		    a. run single testcases
+	   		    b. skip the testcases
+	   		    c. multiple testcases.
+	   		2. Tags defined in feature file only.
+	   		3. @ - special character. @smoke, @regression @Checkout
+	   		4. tag conditions defined in runner class.   
 	   		
+	   		
+	   		
+	   if i need to execute any code prior or after each scenario in cucumber.
+	   
+	   
+	   Hooks In Cucumber (Very important interview question.)
+	   1. the code get executed before and after each scenario
+	   2. @Before
+	   3. @AFter
 	
 	 
-	 	 	
+	 	Scrollby -- you scrolling tha page from one position to another position.
+	 	
+	 	1. Scroll from top to bottom or scroll entrie page within view point of browser
+	 	2. need to scroll based on co-ordinates 
+	 	3. need to scroll in to view
+	 	
+	 	JavascriptExecutor interface
 	 	 	
 	 	 	
 	 	 
