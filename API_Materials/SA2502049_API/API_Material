@@ -1,0 +1,247 @@
+			
+			What is an API?
+			API (Application  programming interface) , that helps to make communication between 2 or more ends (techonolgies, software , hard devices, servers) despiste ends uses different technologies.
+
+
+				Types of API
+				Web API - Amazon, Whatsapp web.
+				Library API - Java - JDK ,Selenium Jar (API's)
+				Operating System API -
+
+				Public API , Private API, Payment API - private API.
+
+
+				Workday
+				microsoft teams
+					free account - get limited services
+					purchaged - another limition on services.
+
+					google drive - 15 GB free storage.
+
+
+
+			Dev Environment ----> API --> QA Environment --> Manual/ Automation API
+			Staging Environment --> API - Production Environment 
+			Will be Hosted to internet API -> WebServices.	
+
+			ALL WebServices  are API's
+			Not all API's are webservices.	
+
+
+			API's runs over some protocols - HTTP or HTTPS
+
+			https://www.makemytrip.com/
+			http://
+
+			CRUD operation.
+
+			C -- create  -- POST
+			R -- read   -- Get   | when i want to retreive any information. this would be consider  
+			                       a safest operation amongs all crud methods 
+			U -- Update  -- PUT/PATCH 
+			D -- Delete
+
+			Open browser
+		1.	navigate to google.com
+		2.	Create an account in GMail ( adding new resources into the dataLayer)
+		3.  Update the resources 
+		          PUT  - Update the entire resources 
+                  PATCH - partial update in database.
+        4. Delete - delete any resources.
+
+
+
+
+        API- Request
+        1. Method type
+        2. Request - Payload(Data)
+        3. Header, Cookies - Information. | addtional information.
+        4. Address - URL | EndPoint(Address)
+
+        =============================================
+		API - Response.
+		1. Status Code - 100,200,300,400,500
+		2. Status Message. 
+		3. Response - Payload (Data).
+		4. Headers, Cookies 
+
+
+
+			What is an Endpoint?
+
+		URI: Uniform resources identifier
+		URL: Uniform resources locator
+		URN: Uniform resources Name
+
+			https://HRM.com/employee?id=2
+			https://HRM.com/department?id=4
+
+
+			Scheme – http/https
+			Host – HRM.com
+			Path parameter – employee / department (database name)
+			Queryparameter - ?id=4/?id=2
+
+
+
+			URI - https://HRM.com/department?id=4
+			URL - HRM.com/department?id=4
+			URN - department?id=4
+
+
+			https://reqres.in/api/users/2
+			https://reqres.in/api/users
+
+
+				GET - URI
+				POST - URI
+				PATCH - URI
+				PUT - URI
+				DELETE - URI
+
+
+
+		Type of WebServices
+		SOAP - simple object access protocal
+		REST - resprestenational state transfer. 
+
+		Feature |  REST | SOAP
+
+		PROTOCOL | HTTP/HTTPS - CRUD| http smtp POST method (Create)   
+		DATA FORMAT | JSON, XML    | XML only.
+		Performance| Faster, light weight | Slower in response.
+		UserCase | Web,Mobile- API | Enterprise application.
+
+
+
+
+				Creating an GMAIL account 
+
+				1. Firstname  - nitin
+				2. lastname - gupta
+				3. gender - male
+				4. DOB - 01/02/1990
+				5. Phone no. - 2131231231
+				6. email ID - nitin@gmail.com
+				7. Recovery emailID - xxx@gmail.com
+
+
+						{
+						   "Gmail":{
+
+						   	"Firstname" : "nitin",
+						   	"lastname"  : "gupta",
+						   	"gender"  : "male"
+
+						   }
+
+
+						}
+
+
+			API_ Verification or Validation POSTMAN.
+				How to create vairables in jS
+
+			Java
+			 1. String name="Nitin";
+			 2. int i = 90;
+			 3. flaot
+			 4. boolean
+
+			 Javascripts
+			 	1. var 
+			 	2. let
+			 	3. const
+
+			 	let name = "nitin";
+			 	let x = 100;
+			 	const flag = true
+			 	let f = 3.0;
+
+
+			how to create functions and types of functions in JS
+
+			//functions 
+
+
+
+
+
+			function add(){
+				let result = 10 + 20;
+				console.log(result);
+			}
+
+			function add(x,y) {
+
+			let result = x + y;
+			console.log(result);
+
+			}
+
+
+
+			as an response
+			 Status code | status message, Header, cookies , response body
+
+			 status code -- 200 - 299  - success 
+			             -- 300 - 399  - success |Redirecting | transported (Login api | google, X,instagram,
+			                                       github ,  Payment API (Paypal, upi))
+ 			             -- 400 - 499  - something worng with application or api format.
+			             -- 500 - 599  - API server.
+
+			   URL - https://restfulapi.net/http-status-codes/          
+
+
+			   	For postman response API verification uses Chai - library.
+
+
+			   	test(" mention testcase name", function logic | function name)
+
+
+			   	Postman variables.
+			   	1. Global - visiblity of this collection across all collection within workspace.
+			   	2. Environment - Development | QA | production  | staging
+			   	3. Collections - reqres | booking 
+
+
+			   	To generate Postman collection execution reports use Newman
+
+			   	1. we need postman collection. - herokuapp.
+			   	2. we need that environment also
+
+			   	we need to export both files from postman
+		command to generate HTML report --->	   	newman run herokuappBookingApp.postman_collection.json SA2502049.postman_environment.json -r htmlrxtra
+
+
+			   	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

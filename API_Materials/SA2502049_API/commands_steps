@@ -1,0 +1,40 @@
+STEPS TO SETUP NODEJS AND JSON SERVER ON LOCAL MACHINE
+
+1. PRE-REQUEST
+   A. DOWNLOAD AND INSTALL NODEJS VERSION - https://nodejs.org/en
+   B. STUDENT.JSON
+   
+2. STEPS TO FOLLOW
+   A. AFTER INSTALLTION - OPEN COMMAND PROMPT
+   B. TYPE - npm install -g json-server (this command would install json server on local machine)
+      for MAC OS - sudo npm install -g json-server
+   C. Now go to location where student.json file saved on your machine	  
+   D. COMMOND TO RUN THE JSON SERVER WITH STUDENT.JSON (DATABASE) --> json-server student.json 
+   
+======================================================================================================
+STEPS TO RUN POSTMAN COLLECTION FROM COMMAND LINE
+PRE-REQUEST -
+ 1. DOWNLOAD POSTMAN CLI -  1. https://learning.postman.com/docs/postman-cli/postman-cli-installation/#mac-apple-chip-installation (BASED ON OS, YOU WILL GET LINK)
+
+1.CLICK ON ... CORRESPONDING TO COLLECTION NAME IN POSTMAN ON LEFT SIDE
+2.SELECT RUN COLLECTION
+3.SELECTS AUTOMATE RUNS VIA CLI OPTION UNDER FUNCTIONAL ON RIGHT SIDE OF POSTMAN WINDOW.
+4.CLICK ON COPY ICON UNDER --> RUN ON POSTMAN CLI
+5. TO GENERATE API KEY - CLICK ON ADD API KEY AND INSERT THE KEY 
+6. COPY COMPLETE COMMAND BY CLICK ON COPIED OPTION.
+7. PASTE THE COMMAND TO CMD AND RUN
+
+============================================================================================================
+ 
+Node.js is mandatory for below commands - generate report in postman with newman from CLI
+Install newman from cmd -- goto newman website copy that command and run it on cmd
+inorder to run postman collection--> export collection into folder --> navigate to that path and open command prompt
+run postman collection in postman = newman run collectionfilename.json
+generate report in postman = 
+1. npm install -g newman-reporter-html to install package
+2. npm newman run collectionfilename.json -r html
+
+then goto folder where collection has exported and check the report.
+ 
+npm install -g newman-reporter-htmlextra   
+    
