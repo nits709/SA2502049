@@ -13,8 +13,8 @@ public class Headers_Cookies_QueryParameter {
 	@Test
 	public void headersTest() {
 		
-		given().when().get(reqres_URL).then().statusCode(200).log().headers();
-		
+     given().when().get(reqres_URL).then().statusCode(200).log().headers();
+ 		
 //		Response res = given().when().get(reqres_URL);
 //				System.out.println("Print header "+ res.header("X-Powered-By"));
 //				System.out.println("Print header "+ res.header("Content-Type"));

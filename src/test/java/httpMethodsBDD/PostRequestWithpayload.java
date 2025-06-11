@@ -47,7 +47,7 @@ public class PostRequestWithpayload {
 	  	
 	  	
 	  	given().header("x-api-key","reqres-free-v1").contentType("application/json")
-	  	.body(data)
+	  	.body(data)  // serailizartion in rest- assured.
 	  	.when().post(post_req).then().statusCode(201).log().body();
 	  
   }

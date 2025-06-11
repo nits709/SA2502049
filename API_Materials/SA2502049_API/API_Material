@@ -211,7 +211,48 @@
 			   	2. we need that environment also
 
 			   	we need to export both files from postman
-		command to generate HTML report --->	   	newman run herokuappBookingApp.postman_collection.json SA2502049.postman_environment.json -r htmlrxtra
+		command to generate HTML report --->	   	newman run herokuappBookingApp.postman_collection.json SA2502049.postman_environment.json -r htmlextra
+		===============================
+
+		API AUtomation - rest assured.
+
+		Authentication and Authorization 
+
+		1. Authentication
+		2. Authorization
+
+
+		Type of authentications
+		1. Basic Authentication
+		2. Digest Authentication
+		3. Bearer token Authentication
+		4. OAuth2.0
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 
 
 			   	

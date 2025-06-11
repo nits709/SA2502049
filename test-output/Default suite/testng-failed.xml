@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="httpMethodsBDD.Headers_Cookies_QueryParameter">
+      <class name="authenticationType.basicAuthentication">
         <methods>
-          <include name="queryParameterTest"/>
+          <include name="baseAuthenticationtest"/>
         </methods>
-      </class> <!-- httpMethodsBDD.Headers_Cookies_QueryParameter -->
+      </class> <!-- authenticationType.basicAuthentication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

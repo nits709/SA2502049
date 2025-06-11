@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-09T22:36:01 IST" name="Default suite" finished-at="2025-06-09T22:36:04 IST" duration-ms="2509">
+  <suite started-at="2025-06-10T21:18:35 IST" name="Default suite" finished-at="2025-06-10T21:18:38 IST" duration-ms="2875">
     <groups>
     </groups>
-    <test started-at="2025-06-09T22:36:01 IST" name="Default test" finished-at="2025-06-09T22:36:04 IST" duration-ms="2509">
-      <class name="httpMethodsBDD.Headers_Cookies_QueryParameter">
-        <test-method signature="cookiesTest()[pri:0, instance:httpMethodsBDD.Headers_Cookies_QueryParameter@61862a7f]" started-at="2025-06-09T22:36:01 IST" name="cookiesTest" finished-at="2025-06-09T22:36:04 IST" duration-ms="2452" status="PASS">
+    <test started-at="2025-06-10T21:18:35 IST" name="Default test" finished-at="2025-06-10T21:18:38 IST" duration-ms="2875">
+      <class name="authenticationType.BearerTokenAuthentication">
+        <test-method signature="bearerTokenTest()[pri:0, instance:authenticationType.BearerTokenAuthentication@dbf57b3]" started-at="2025-06-10T21:18:35 IST" name="bearerTokenTest" finished-at="2025-06-10T21:18:38 IST" duration-ms="2817" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cookiesTest -->
-      </class> <!-- httpMethodsBDD.Headers_Cookies_QueryParameter -->
+        </test-method> <!-- bearerTokenTest -->
+      </class> <!-- authenticationType.BearerTokenAuthentication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
