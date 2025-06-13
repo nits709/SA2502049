@@ -1,0 +1,80 @@
+1. Android Studio Download ... let this continue
+2. node - v | check node version
+3. Install appium --> npm install -g appium (sudo for Mac os)
+4. Where appium  -- tell location of appium in your PC's
+5. appium ---> to start appium server , allow the window security
+6. press --> ctrl+c   --> stop appium server.
+7. UI automator 2 driver --> appium driver list | displayed lists of driver
+8. appium driver install uiautomator2
+9. github.com/appium/appium-inspector/releases/tag/v2024.9.1
+   click on Appium-Inspector-2024.9.1-win.exe to download.
+10. install - android-studio-2024.3.1.13 
+
+
+What is Mobile testing ?
+Mobile testing refers to test the mobile application (apps - facebook,icici, amazon, flipkart) on various devices (android devices, IOS devices) and platform android and iOS to ensure functionality working as expected to provide smooth and bug free experience (USER).
+
+
+Testing Conduct on mobile
+   1. Functional
+   2. Usability | compatibility
+   3. Accessibility
+   4. Performance
+   5. Security
+   6. Configuration  | Interupts testing
+   7. Hardware testing.
+
+
+   Types of mobile testing
+   1. Manually
+   2. Automation.
+
+
+1. Type of Application
+   a. Native apps
+   b. Mobile WebApps
+   c. Hybrid Application
+
+
+Till appium 1.0 desiredCapabilities class to configured the environment
+UIAutomatorOption2
+
+Locator strategy in Android (Appium)
+   total 5 type way can get the locator addresses in appium
+    1. Accessibility ID -->unique element ID
+    2. ID  --> resource-id ()
+    3. Class name
+    4. xpath
+    5. UI automator 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
