@@ -49,7 +49,25 @@ Locator strategy in Android (Appium)
 
 
 
+Assignments for appium automation
+1. write an automation script for swipe gesture
+2. write an automation script for Alert (up to your choice.)
 
+
+
+
+Android specific operation (device)
+1. Lock the device
+2. unlock the device
+3. rotate the device wise versa
+4. toggleoff/on - mobile data - wifi
+5. enable airplane mode/disable
+
+
+What is package and activity of any mobile app
+
+1. amazon  - URL | 
+activity - login | register | plp 
 
 
 

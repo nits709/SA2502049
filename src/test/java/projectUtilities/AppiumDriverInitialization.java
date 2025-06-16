@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
 public class AppiumDriverInitialization {
@@ -22,7 +23,8 @@ public class AppiumDriverInitialization {
 
 		try {
 			URL url = new URL("http://127.0.0.1:4723/");
-			appiumDriver = new AppiumDriver(url, auto);
+			//appiumDriver = new AppiumDriver(url, auto);
+			appiumDriver = new AndroidDriver(url,auto);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

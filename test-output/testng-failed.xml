@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LocatorStrategyInAppium.testMobileLocator">
+      <class name="appium_androidSpecificOperations.testIdemoAppMobileDevicePerformance">
         <methods>
-          <include name="testAppiumLocator"/>
+          <include name="testAppPerformancedata"/>
         </methods>
-      </class> <!-- LocatorStrategyInAppium.testMobileLocator -->
+      </class> <!-- appium_androidSpecificOperations.testIdemoAppMobileDevicePerformance -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
