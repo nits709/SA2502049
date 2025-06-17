@@ -20,11 +20,13 @@ public class AppiumDriverInitialization {
 
 		String apkPath = System.getProperty("user.dir") + "//src//test//resources//ApiDemos-debug.apk";
 		auto.setCapability("appium:app", apkPath);
-
+		auto.setCapability("appium:udid","AUZ9JFD689PZVCNZ");
 		try {
 			URL url = new URL("http://127.0.0.1:4723/");
 			//appiumDriver = new AppiumDriver(url, auto);
 			appiumDriver = new AndroidDriver(url,auto);
+			
+			System.out.println("Session Id" + appiumDriver.getSessionId());
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

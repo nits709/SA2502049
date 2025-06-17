@@ -69,6 +69,30 @@ What is package and activity of any mobile app
 1. amazon  - URL | 
 activity - login | register | plp 
 
+Real Device Setup: Enable USB debugging on Android mobile
+========================================================
+Note: Steps can differ based on the phone manufacturer!
+-> Settings -> System -> About Phone -> Click Build Number 7-8 times
+-> Settings -> Developer Options -> Enable USB Debugging
+-> Permission pop-up: Check the box and press Allow to recognise the computer
+-> Setting -> Developer Options -> Enable Disable permission monitoring
+-> Setting -> Developer Options -> Enable Disable child process restrictions
+-> Setting -> Developer Options -> Enable Force allow apps on external
+-> run "adb devices" in CMD prompt to check if device is recognised
+
+-> USB drivers:
+Google: https://developer.android.com/studio/run/win-usb
+OEMs: https://developer.android.com/studio/run/oem-usb
+
+https://www.vysor.io/download/
+
+Options to be enabled under developermode
+1. Don not use lock screen
+2. usb debugging
+3. Force allow apps on external
+3. Disable child process restrictions
+4. Disable premission montioring
+
 
 
 

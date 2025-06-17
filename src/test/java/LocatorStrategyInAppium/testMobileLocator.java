@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import projectUtilities.AppiumDriverInitialization;
+import projectUtilities.baseUtil;
 
 public class testMobileLocator {
 
@@ -19,6 +20,8 @@ public class testMobileLocator {
 		String firstElementName = ele1.getText();
 		ele1.click();
 		
+		
+		//baseUtil.getScreenshot(driver, firstElementName);
 		Thread.sleep(3000);
 		
 		driver.navigate().back();
@@ -28,6 +31,8 @@ public class testMobileLocator {
 		String secondElementName = ele2.getText();
 		ele2.click();
 		
+		baseUtil.getScreenshot(driver, secondElementName);
+		
 		Thread.sleep(3000);
 		driver.navigate().back();
 
@@ -36,6 +41,8 @@ public class testMobileLocator {
 		
 		String thirdElementName = ele3.getText();
 		ele3.click();
+		
+		baseUtil.getScreenshot(driver, thirdElementName);
 		
 		Thread.sleep(3000);
 		
