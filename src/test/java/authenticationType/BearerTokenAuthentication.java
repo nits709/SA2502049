@@ -9,10 +9,6 @@ import io.restassured.response.Response;
 
 public class BearerTokenAuthentication {
 
-	
-	
-	
-	
 	@Test
 	public void bearerTokenTest() {
 		String btoken = "Replace Your Github person Access Token";

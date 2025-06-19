@@ -227,6 +227,24 @@
 		2. Digest Authentication
 		3. Bearer token Authentication
 		4. OAuth2.0
+		
+		
+		
+		OAuth2.0 - Open Authorisation 2.0 
+		
+1. Create application
+2. Create ClientID -Ov23cteDwmjHHsw036mi  | ClientSecret - 0fcc02ae65f07390fa6e374bae8a3bf5c4cbb3c8
+3. then click on update application button
+4. hit this UR lo borwser - https://github.com/login/oauth/authorize?client_id=Ov23cteDwmjHHsw036mi
+5. click on Authorize button.
+6. in response , user redirected to redirects URL and get the code within URL.
+7. Now to get access token from authorization server
+   hit below mention post request.
+   POST | https://github.com/login/oauth/access_token?client_id=Ov23liUcsck3ThbEsejK&client_secret=e4e3f19bb18110b2dd7cbe6acc8cdf3dc93449b9&code=61722087ca755e067264
+8. hit below API to get github access
+   GET| https://api.github.com/user/repos
+   Authorization Bearer Tokan (Add token you recevied in step no.7)
+		
 
 		
 
