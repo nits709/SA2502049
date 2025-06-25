@@ -53,6 +53,111 @@ console.log("hi"* 10); //NAN
 
 
 
+console.log("---------------------Explicit Type casting-----------------------------------");
+// Number, String, Boolean
+let data = "200"; // string
+console.log(typeof data);
+
+console.log(data+200);//200200
+
+//addition --> string to number
+        let addition = Number(data);
+        console.log(addition); // 200
+        console.log(typeof addition); //number 
+        console.log(addition+200); // 400
+
+        console.log(Number("600")); //600
+        console.log(Number("Nitin")); //nan
+        console.log(Number(true));// 1
+        console.log(Number(false));//0
+        console.log(Number(null));// 0
+        console.log(Number(undefined));//Nan
+
+
+        console.log("---------Number to String----------");
+        let num = 2000;
+        console.log(typeof num);
+        console.log(num-1000);//1000
+        console.log(num+1000);//3000
+
+        let numToStringConvert = String(num); // 2000
+        console.log(typeof numToStringConvert);
+        console.log(numToStringConvert-1000);//1000
+        console.log(numToStringConvert+1000);//20001000
+        console.log(Number(numToStringConvert)-1000);//1000
+        
+        console.log("---------------Boolean Conversion------------");
+        /*
+            truthy and falsy
+            truthy means any value in bolean context represented as true
+            non-zero number , 1,2 and nonempty string "23123""nitin"
+
+            falsy - 5
+            any value in boolean context represented as false
+            0,"",null,undefined,NAN,false
+
+            true - 1
+            false - 0
+        */
+
+            console.log(Boolean(90));//true
+            console.log(Boolean(-90)) // true
+            console.log(Boolean("Nitin")) //true 
+            console.log(Boolean(true))// true
+            console.log(Boolean(80.999))//true
+
+
+
+            console.log(Boolean(0));//false
+            console.log(Boolean(false)) // false
+            console.log(Boolean(undefined)) //false 
+            console.log(Boolean(null))// false
+            console.log(Boolean(""))//false
+            console.log(Boolean(NAN))//false
+
+console.log(isNaN(1234)); // false | 1234 is a number
+console.log(isNaN("Hello"));// true | Hello is not a number
+
+
+
+            
+                     
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+
+
+
+
+
+
+
 
 
 
