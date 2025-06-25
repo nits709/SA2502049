@@ -1,3 +1,6 @@
+
+
+show();
 /*
 variables - in JS are used to store data that can be used and changed later in the program.
 Javascripts keywords
@@ -21,14 +24,14 @@ const - (final) is immutable variable
 3. variable are immutable so that re-assigned not possible.
 */
 
-//show();
+// show();
 
-// global
+// // global
 //  var fname = "nitin";
 //  let id = 709;
 //  const email = "nitin@gmail.com";
 
-//  console.log("==============================Calling variable======================")
+// //  console.log("==============================Calling variable======================")
 
 //  console.log(fname)
 //  console.log(id)
@@ -126,30 +129,82 @@ if i have declared someting at linke 123
 
     */
 
-console.log("Hoisting with var")
+// console.log("Hoisting with var")
 
-        console.log("line no. 129"  +a)
-        var a = "xyz";
-        console.log("line no. 131" +a)
-
-
-        console.log("Hoisting with let ")
-
-        console.log("line no. 138"  +abc)
-        let abc = "xyz";
-        console.log("line no. 140" +abc)
+//         console.log("line no. 129"  +a)
+//         var a = "xyz";
+//         console.log("line no. 131" +a)
 
 
-        console.log("Hoisting with const")
+        // console.log("Hoisting with let ")
 
-        console.log("line no. 145"  +abc)
-        const abcd = "1234";
-        console.log("line no. 147" +abcd)
-
-
+        // console.log("line no. 138"  +abc)
+        // let abc = "xyz";
+        // console.log("line no. 140" +abc)
 
 
+        // console.log("Hoisting with const")
 
+        // console.log("line no. 145"  +abc)
+        // const abcd = "1234";
+        // console.log("line no. 147" +abcd)
+//hoisting allowed to function declaration but not function expression.
+// function add();  // function declaration
+// 1. function without name , 2. arrow function.(anonynomus)
+
+// let sum = function(){}
+
+/*
+2 steps
+1. preparation (Memory setup)
+   a. JS scans your code top to bottom
+   b. its finds all var, let, const and function declarations
+   c. its sets them aside in memory before any line runs
+ 
+2. Execution.
+    1. Now js runs your code line by line
+    2. if we use a variable or function before its written , js got to know from step 1
+
+*/
+
+console.log(a); //undefined
+var a = 10;
+
+var a; // step1: declaration hoisted.
+console.log(a); // step 2 value is undefined.
+a = 10 ; // step2 : assignment
+
+
+// console.log(b);  // error
+// let b = 5 ; 
+// javascripts knows b exists but doesnt let you touch it until the line where it declared.
+//TDZ Temporal dead zone., let and const are hoisted, 
+
+function show(){
+    console.log("show function calling")
+}
+
+show();
+
+
+/*
+ReferenceError: Cannot access 'sum' before initialization
+    at Object.<anonymous> (/Volumes/Renuka/Professional Stuff (Restricted)/Session_material/Session_WorkSpaces/SA2502049_Workspace/SA2502049_JavaScript/Day2/variablesInJavascripts.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+*/
+let sum =function(){
+    {
+        console.log("calling function without name")
+    }
+}
+
+sum();
 
 
 
