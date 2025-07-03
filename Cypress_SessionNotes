@@ -1,0 +1,107 @@
+Introduction of Cypress?
+1. Frontend web based automation testing tool.
+2. Its tool to test Modern Web based Application (New frameworks such as reactJS, Angular JS uses to WebSites).
+3. Cypress capable to automate any application which runs over browser.
+4. In Cypress we write test scripts by using javascripts and TypeScript.
+5. Cypress doesnot uses any selenium library, its completely different from selenium.
+6. Cypress is an opensources 
+	1. Cypress Runner - opensources (up to 80% of automation task can be done at runner, writing,  
+	   running, custom function etc.)
+	2. Cypress dashboard - testcases maintained, parallel execution. comes with paid version.
+7. Cypress run on nodejs environment (similiar like selenium runs on java (JDK/JRE))
+
+Who, can use cypress? - both dev and QA can use.
+1. Initally dev team uses Cypress to perform unit and integration testing.
+2. Later QA starts using it
+3. E2E - Testcases
+4. API Testing.
+
+Difference with selenium and Cypress
+
+Main Feature of Cypress.
+1. Time Travel --> capture screenshot of each steps
+2. Automatic Wait.
+3. Consistence (Flaky test in selenium webdriver).
+4. screenshot and video part is avaialbe in cypress.
+5. cross browser testing.
+
+
+Limitations of Cypress.
+1. cannot automate desktop based application
+2. limitated browser supports
+3. supports available for javascripts and type scripts
+4. reading and writing data from external files is difficult.
+5. Third party integration supports is not there.(reporting)
+
+ Environment setup
+1. Nodejs and Visual Studio code as editor
+2. Create one folder 
+
+
+ 1. install cypress
+ 2. open cypress - npx cypress open  -> trigger cypress  -- launch cypress testrunner
+ 		u can select component -- e2e 
+
+
+way to run tc's in Cypress
+1. from cypress UI - npx cypress open
+2. from terminal - npx cypress run
+   from terminal execution by default cypress run testscripts on electron browser in headless mode.
+3. to enable video in cypress 
+	add video:true  in cypress.config.js file
+	
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  e2e: {
+    video:true,
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
+});
+
+4. npx cypress run --headed - runs testscripts without headless mode.
+5. npx cypress run --headed --browser --> runs on specific browser
+6. runs specific spec file from terminal
+    npx cypress run --spec filepath/filename --headed --browser chrome
+	Example:
+	npx cypress run --spec cypress/e2e/firstCypressScript.cy.js  --headed --browser chrome
+7. Cypress doesn't have maximize and minimize browser window.
+	viewport - 	
+
+Locators
+-----------  
+Cypress supports CSS locator only.
+in someof previous versions xpath support provided but that is no longer available.
+
+  driver.findElement(By.cssSelector)
+
+        Input --  Cypress
+        get
+8. get function helps cypress to identify the locator over the webpage like as findElement in seleniumwebdriver.
+9. to get attribute of an element in cypress use invoke and then function
+two prim. function
+1. Invoke uses to invoke the property of element in DOM 
+2. then  - is jQuery function which has direct access to the DOM.   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
