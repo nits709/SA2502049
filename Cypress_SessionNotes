@@ -86,6 +86,13 @@ two prim. function
 2. then  - is jQuery function which has direct access to the DOM.   
 
 
+===============Day3=================
+1. Cypress Assertions.
+  1. Implicit Assertion - should, and  - functions - 
+  2. Explicit Assertion. - 
+      a. expect() - BDD - Behaviour Driven Development
+      b. assert() - TDD - test Data Driven
+
 
 
 
