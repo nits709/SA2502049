@@ -94,6 +94,17 @@ two prim. function
       b. assert() - TDD - test Data Driven
 
 
+Select function in cypress accept , value, index, text to select value from dropdown.  
+
+
+
+Assignments
+navigate to parabank websites
+https://parabank.parasoft.com/parabank/index.htm
+
+get the text from element menu's and print using each function of jquery.
+
+
 
 
 
