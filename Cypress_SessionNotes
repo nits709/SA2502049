@@ -105,6 +105,34 @@ https://parabank.parasoft.com/parabank/index.htm
 get the text from element menu's and print using each function of jquery.
 
 
+Bydefault cypress test execution speed is very fast, but we can customize by using plugins in cypress
+cypress-slow-down -> this plugins help to slow down the execution speed.
+slowDown(1000)
+
+install this plugins
+1. open terminal -> npm install --save-dev cypress-slow-down
+2. associate plugin with cypress project --> e2e.js
+    cypress/support/e2e.js
+3.   require('cypress-slow-down/plugin')  
+4. if steps 2 fails then commment the same code in e2e.js file and follow     
+    steps 5.
+5. import { slowCypressDown } from "cypress-slow-down";  mentioned at the top of the class for slowcypressdown function.
+
+
+Hooks
+Skip function use to skip describe or it block
+only function use to run specific block - describe and it
+before
+after
+beforeeach
+aftereach
+
+
+
+
+
+
+
 
 
 

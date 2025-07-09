@@ -13,5 +13,7 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
+//require('cypress-slow-down/plugin')();
 // Import commands.js using ES2015 syntax:
 import './commands'
+
