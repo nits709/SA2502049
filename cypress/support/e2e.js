@@ -16,4 +16,5 @@
 //require('cypress-slow-down/plugin')();
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-mochawesome-reporter/register';
 

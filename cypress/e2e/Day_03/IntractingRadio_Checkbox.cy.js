@@ -21,7 +21,7 @@ describe("Check UI Element",()=>{
 
     // })
 
-        it("handling checkbox",()=>{
+        it.only("handling checkbox",()=>{
 
             cy.visit("https://testautomationpractice.blogspot.com/")
 
@@ -32,6 +32,7 @@ describe("Check UI Element",()=>{
             cy.get('input#sunday').check().should('be.checked')
 
             cy.wait(2000);
+
             //unselecting the checkbox - sunday
             cy.get('input#sunday').uncheck().should('not.be.checked')
 

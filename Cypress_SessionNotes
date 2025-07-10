@@ -130,6 +130,47 @@ aftereach
 
 
 
+Reports
+1) install cypress-mochawesome-reporter
+    npm i --save-dev cypress-mochawesome-reporter
+
+2) Change cypress reporter & setup hooks
+   Edit config file (cypress.config.js by default)
+
+    const {defineConfig} = require("cypress");
+    module.exports =defineConfig({
+      reporter: 'cypress-mochawesome-reporter', //for html reports
+      e2e: {
+        setupNodeEvents(on, config){
+          //implement node event listeners here
+        require('cypress-mochawesome-reporter/plugin')(on); //for html report
+        },
+      },
+    })
+
+ 3) Add to cypress/support/e2e.js
+    import 'cypress-mochawesome-reporter/register';
+
+ 4) run cypress
+    npx cypress run --spec cypress\e2e\MyTest.cy.js(full qualified path of your testcase file)      
+
+=======================================================================
+
+
+parent - input class="form"
+ child - div
+  child - img
+   child - p
+
+ 100 - p
+
+   cy.get("locator")
+   cy.get("input > div")
+   cy.get("input > div > img > p")
+   cy.get("input").find('p').eq(2).then((element)=>{
+      element.text();
+   })
+
 
 
 

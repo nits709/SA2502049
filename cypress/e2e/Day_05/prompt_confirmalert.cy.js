@@ -49,7 +49,7 @@ describe("handling alerts",()=>{
     it("prompt alert in js",()=>{
         cy.visit("https://the-internet.herokuapp.com/javascript_alerts");
         cy.window().then((win)=>{
-                cy.stub(win,'prompt').returns('welcome')
+                cy.stub(win,'prompt').returns(null)
         })
 
         cy.get("button[onclick='jsPrompt()']").click()
