@@ -1,0 +1,63 @@
+PlayWright
+-----------------------------------------------
+1. playwright is webbased functional automation tool like selenium, cypress
+2. Playwright supports -> webbased application, Mobile Web apps, API, doest not support mobile native apps
+3. playwright -> langugage supports - javascript, typescript, java, python, .net(c#) 
+4. Browser Supports -> Chromium based browser, Webkit - Safari
+5. OS Supported -> Window, MacOS, Linux and supports CLI (command line intepreter)
+
+
+Feature of playwright
+1. free and Open Source.
+2. Multiple Browser and OS
+3. Very Easy installation.
+4. Functional, Api, and accessiblity testing supports
+5. CI-CD, Docker
+6. parallel - testing
+7. Auto wait mechanism - wait
+8. build in assertions.
+9. Multi tab and Multi window feature is available in playwright.
+10. Frames and shadow DOM element supports playwright.
+11. parameterization
+12. Mobile emulates supports available
+13. Fast
+
+
+
+How to run the test in plawright
+1. npx playwright test  | headless mode.  | run all test in all browser in headless mode
+2. npx playwright test --headed   | run all test in all browser in headed mode.
+3. to open report | npx playwright show-report 
+4. npx playwright test filename (filename.spec.js)  | run specific spec file from test folder.
+5. npx playwright test filename --project= chromium  | run test on specific browser.(chromium, webkit, chrome,firefox)
+6. npx playwright test filename --project=chromium --headed --debug | enable and run test in debug mode
+
+
+
+
+to create test in playwright, we need to import view packages from playwright.
+
+import {test,expect} from '@plawright/test'
+
+1. console.log('A')
+2. console.log('B')
+3. console.log('C')
+
+async: this command tell javascript we need to wait for few method which cannot finished ther task immideately
+await: makes command wait unit it recives the output from previous command.
+
+
+
+Locators in Playwright
+1. property -- element would have many properties, class, name, id, href
+2. css
+3. xpath
+
+page.locator('property/css/xpath')
+
+format options to write function.
+
+page.locator('locator').click()   // playwright
+page.click('locator')  // javascript.
+
+
