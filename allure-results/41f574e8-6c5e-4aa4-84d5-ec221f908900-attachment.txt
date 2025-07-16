@@ -1,0 +1,3 @@
+number of options 10
+inside if condition
+status true

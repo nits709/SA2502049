@@ -1,0 +1,90 @@
+Page loaded successfully
+total number of  44 links
+0 txt is A/B Testing
+title of the page The Internet
+1 txt is Add/Remove Elements
+title of the page The Internet
+2 txt is Basic Auth
+title of the page 
+3 txt is Broken Images
+title of the page The Internet
+4 txt is Challenging DOM
+title of the page The Internet
+5 txt is Checkboxes
+title of the page The Internet
+6 txt is Context Menu
+title of the page The Internet
+7 txt is Digest Authentication
+title of the page 
+8 txt is Disappearing Elements
+title of the page The Internet
+9 txt is Drag and Drop
+title of the page The Internet
+10 txt is Dropdown
+title of the page The Internet
+11 txt is Dynamic Content
+title of the page The Internet
+12 txt is Dynamic Controls
+title of the page The Internet
+13 txt is Dynamic Loading
+title of the page The Internet
+14 txt is Entry Ad
+title of the page The Internet
+15 txt is Exit Intent
+title of the page The Internet
+16 txt is File Download
+title of the page The Internet
+17 txt is File Upload
+title of the page The Internet
+18 txt is Floating Menu
+title of the page The Internet
+19 txt is Forgot Password
+title of the page The Internet
+20 txt is Form Authentication
+title of the page The Internet
+21 txt is Frames
+title of the page The Internet
+22 txt is Geolocation
+title of the page The Internet
+23 txt is Horizontal Slider
+title of the page The Internet
+24 txt is Hovers
+title of the page The Internet
+25 txt is Infinite Scroll
+title of the page The Internet
+26 txt is Inputs
+title of the page The Internet
+27 txt is JQuery UI Menus
+title of the page The Internet
+28 txt is JavaScript Alerts
+title of the page The Internet
+29 txt is JavaScript onload event error
+title of the page Page with JavaScript errors on load
+30 txt is Key Presses
+title of the page The Internet
+31 txt is Large & Deep DOM
+title of the page The Internet
+32 txt is Multiple Windows
+title of the page The Internet
+33 txt is Nested Frames
+title of the page 
+34 txt is Notification Messages
+title of the page The Internet
+35 txt is Redirect Link
+title of the page The Internet
+36 txt is Secure File Download
+title of the page 
+37 txt is Shadow DOM
+title of the page The Internet
+38 txt is Shifting Content
+title of the page The Internet
+39 txt is Slow Resources
+title of the page The Internet
+40 txt is Sortable Data Tables
+title of the page The Internet
+41 txt is Status Codes
+title of the page The Internet
+42 txt is Typos
+title of the page The Internet
+43 txt is WYSIWYG Editor
+title of the page The Internet

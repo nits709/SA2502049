@@ -3,7 +3,7 @@
 // can access the element by using alt text attribtue if avaiable.
 // how to check the size of element present in playwright.
 // nth method is equal to the get function in selenium.
- test.skip('getByAlttext', async({page}) => {
+ test('getByAlttext', async({page}) => {
         await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         const logo = await page.getByAltText('orangehrm-logo').nth(1)  // we not sure
         const logo1 = await page.getByAltText('company-branding');
@@ -12,18 +12,17 @@
         await expect(logo1).toBeVisible();
  })
 
- test.skip('getByPlaceholder | getByText', async({page}) => {
+ test('getByPlaceholder | getByText', async({page}) => {
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         await page.getByPlaceholder('Username').fill('Admin');
         await page.getByPlaceholder('Password').fill('admin123');
         await page.locator("[type='submit']").click();
-
         const AdminElement = await page.getByText('Admin');  // by this can validate the element using text.
         await expect(AdminElement).toBeVisible();
 
 })
 
-test.skip('getByLabel', async({page}) => {
+test('getByLabel', async({page}) => {
     await page.goto("https://the-internet.herokuapp.com/login");
         await page.getByLabel('Username').fill('tomsmith')
         await page.getByLabel('Password').fill("SuperSecretPassword!")

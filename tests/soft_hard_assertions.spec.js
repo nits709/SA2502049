@@ -11,7 +11,7 @@ await page.goto('https://demoblaze.com/');
 
 })
 
-test.only('soft',async({page})=>{
+test('soft',async({page})=>{
 
     await page.goto('https://demoblaze.com/');
           console.log("A");
