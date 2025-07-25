@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T21:18:35 IST" name="Default suite" finished-at="2025-06-10T21:18:38 IST" duration-ms="2875">
+  <suite started-at="2025-07-24T21:57:44 IST" name="Default suite" finished-at="2025-07-24T21:57:50 IST" duration-ms="5608">
     <groups>
     </groups>
-    <test started-at="2025-06-10T21:18:35 IST" name="Default test" finished-at="2025-06-10T21:18:38 IST" duration-ms="2875">
-      <class name="authenticationType.BearerTokenAuthentication">
-        <test-method signature="bearerTokenTest()[pri:0, instance:authenticationType.BearerTokenAuthentication@dbf57b3]" started-at="2025-06-10T21:18:35 IST" name="bearerTokenTest" finished-at="2025-06-10T21:18:38 IST" duration-ms="2817" status="PASS">
+    <test started-at="2025-07-24T21:57:44 IST" name="Default test" finished-at="2025-07-24T21:57:50 IST" duration-ms="5608">
+      <class name="telecomeProject.telecomAssignements">
+        <test-method signature="addNewUser()[pri:1, instance:telecomeProject.telecomAssignements@441772e]" started-at="2025-07-24T21:57:44 IST" name="addNewUser" finished-at="2025-07-24T21:57:48 IST" duration-ms="4384" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bearerTokenTest -->
-      </class> <!-- authenticationType.BearerTokenAuthentication -->
+        </test-method> <!-- addNewUser -->
+        <test-method signature="getUserProfile()[pri:2, instance:telecomeProject.telecomAssignements@441772e]" started-at="2025-07-24T21:57:49 IST" name="getUserProfile" finished-at="2025-07-24T21:57:50 IST" depends-on-methods="telecomeProject.telecomAssignements.addNewUser" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserProfile -->
+      </class> <!-- telecomeProject.telecomAssignements -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

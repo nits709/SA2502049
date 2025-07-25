@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "89c9fc99-3dba-4aa7-b6f1-1708070fc42b",
+		"name": "SA2502049_telecom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39085229",
+		"_collection_link": "https://sa2502049.postman.co/workspace/SA_2502049~15828d68-b28e-42e7-88bf-7791ba317949/collection/39085229-89c9fc99-3dba-4aa7-b6f1-1708070fc42b?action=share&source=collection_link&creator=39085229"
+	},
+	"item": [
+		{
+			"name": "AddNewUser",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// first tc's",
+							"pm.test(\"Status code is 201\", function () {",
+							"   pm.expect(pm.response.code).to.eql(201);",
+							"});",
+							"",
+							"//second tc's - message.",
+							"",
+							"pm.test('check the status message',()=>{",
+							"    pm.expect(pm.response.status).to.eql('Created');",
+							"})",
+							"",
+							"",
+							"//after executes the post request, store token for next api- endpoint use as environment variable.",
+							"",
+							"var res = pm.response.json().token;",
+							"console.log(res.token)",
+							"pm.environment.set(\"userToken\",res);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//create dynamic email with Date class",
+							"var dtime = new Date().getTime();",
+							"var newEmail = \"qa\"+dtime+\"@yopmail.com\";",
+							"",
+							"console.log(\"newEmail\"+newEmail)",
+							"",
+							"//now store newly updated email into environment variable",
+							"pm.environment.set(\"userEmail\",newEmail);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstName\": \"QA\",\n\"lastName\": \"API\",\n\"email\": \"{{userEmail}}\",\n\"password\": \"Smart@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/users",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserProfile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// first tc's",
+							"pm.test(\"Status code is 200\", function () {",
+							"   pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"//second tc's - message.",
+							"",
+							"pm.test('check the status message',()=>{",
+							"    pm.expect(pm.response.status).to.eql('OK');",
+							"})"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{userToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/users/me",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginUser",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var loginToken = pm.response.json().token;",
+							"",
+							"console.log(loginToken)",
+							"",
+							"//will create  environment variable and store the token into.",
+							"",
+							"pm.environment.set(\"lToken\", loginToken);",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\": \"{{userEmail}}\",\n\"password\": \"Smart@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/users/login",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddContact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{lToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstName\": \"John\",\n\"lastName\": \"Doe\",\n\"birthdate\": \"1970-01-01\",\n\"email\": \"jdoe@fake.com\",\n\"phone\": \"8005555555\",\n\"street1\": \"1 Main St.\",\n\"street2\": \"Apartment A\",\n\"city\": \"Anytown\",\n\"stateProvince\": \"KS\",\n\"postalCode\": \"12345\",\n\"country\": \"USA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetContactList",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetContactBasedID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateContact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{lToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstName\": \"Amy\",\n\"lastName\": \"Miller\",\n\"birthdate\": \"1992-02-02\",\n\"email\": \"amiller@fake.com\",\n\"phone\": \"8005554242\",\n\"street1\": \"13 School St.\",\n\"street2\": \"Apt. 5\",\n\"city\": \"Washington\",\n\"stateProvince\": \"QC\",\n\"postalCode\": \"A1A1A1\",\n\"country\": \"Canada\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/688257d3a2ced2001547546c",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						"688257d3a2ced2001547546c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
